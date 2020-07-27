@@ -1,0 +1,93 @@
+@import "./variables.scss";
+
+.navbar-container {
+  background: $white-primary;
+  height: 5em;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 8%;
+}
+
+li {
+  margin: 0.25em 0;
+  a {
+    color: $dark-primary;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.mbtn {
+  padding: 0.6em 2em;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  border: 0;
+  cursor: pointer;
+
+  &__primary {
+    background-color: $button-primary;
+  }
+  &__secondary {
+    background-color: $dark-primary;
+    font-size: 0.75em;
+  }
+}
+
+hr.style-dotted {
+  background-color: $white-primary;
+  border-top: 1.5px dashed $dark-primary;
+}
+
+.header-info-container {
+  width: 80%;
+  margin: auto;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  margin-left: -75px;
+  left: 50%;
+  background: $white-primary;
+  z-index: 1000;
+}
+
+.icon-margins {
+  margin: 0 0.5em;
+}
+
+// TODO
+.footer {
+  background: $blue-primary;
+  margin-top: 20%;
+  width: 100%;
+  color: $white-primary;
+
+  li {
+    a {
+      color: $white-primary;
+    }
+  }
+}
+
+hr.style-dotted-footer {
+  background-color: $blue-primary;
+  border-top: 1.5px dashed $white-primary;
+  border-bottom: none;
+}
