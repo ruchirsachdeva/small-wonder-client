@@ -1,1 +1,12 @@
 <app-image-section [image]="image"></app-image-section>
+<div>
+  <ul>
+    <li><a [routerLink]="['info']">ABOUT US</a></li>
+    <li><a [routerLink]="['history']">HISTORY OF SMALL WONDERS</a></li>
+    <li><a [routerLink]="['leadership']">LEADERSHIP</a></li>
+    <li><a [routerLink]="['vision']">VISION</a></li>
+    <li><a [routerLink]="['mission']">MISSION</a></li>
+    <li><a [routerLink]="['motto']">MOTTO</a></li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
