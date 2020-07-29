@@ -8,6 +8,16 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HomePageComponent } from "./pages/home-page/home-page.component";
 import { CarouselImageSectionComponent } from "./components/carousel-image-section/carousel-image-section.component";
+import { ImageSectionComponent } from './components/image-section/image-section.component';
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
+import { CurriculumPageComponent } from './pages/curriculum-page/curriculum-page.component';
+import { AdmissionsPageComponent } from './pages/admissions-page/admissions-page.component';
+import { FranchisePageComponent } from './pages/franchise-page/franchise-page.component';
+import { EventsAndGalleryPageComponent } from './pages/events-and-gallery-page/events-and-gallery-page.component';
+import { BooksAndBeyondPageComponent } from './pages/books-and-beyond-page/books-and-beyond-page.component';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { ScheduleTourPageComponent } from './pages/schedule-tour-page/schedule-tour-page.component';
+import { ShoonyaPageComponent } from './pages/shoonya-page/shoonya-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +26,16 @@ import { CarouselImageSectionComponent } from "./components/carousel-image-secti
     FooterComponent,
     HomePageComponent,
     CarouselImageSectionComponent,
+    ImageSectionComponent,
+    AboutUsPageComponent,
+    CurriculumPageComponent,
+    AdmissionsPageComponent,
+    FranchisePageComponent,
+    EventsAndGalleryPageComponent,
+    BooksAndBeyondPageComponent,
+    BlogPageComponent,
+    ScheduleTourPageComponent,
+    ShoonyaPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

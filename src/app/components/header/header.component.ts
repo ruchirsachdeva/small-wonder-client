@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router, Params } from "@angular/router";
 
 @Component({
   selector: "app-header",
@@ -7,7 +8,11 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HeaderComponent implements OnInit {
   contactButtonText: string = "Call Us Today! (+91 1234 12345)";
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  navigateToHome() {
+    this.router.navigate(["/"]);
+  }
 }
