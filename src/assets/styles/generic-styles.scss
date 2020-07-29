@@ -10,7 +10,7 @@ body {
 
 .navbar-container {
   background: $white-primary;
-  margin-bottom: 4%;
+  margin-bottom: 3em;
   width: 100%;
 
   nav {
@@ -31,8 +31,23 @@ ul {
       color: $dark-primary;
       font-weight: 700;
       text-decoration: none;
+
+      &:hover {
+        font-weight: 700;
+        color: $dark-primary;
+        text-decoration: none;
+        background: #e8e7e7;
+        padding: 0.25em 0.4em;
+        border-radius: 20px;
+      }
     }
   }
+}
+
+.header-nav-item-active {
+  background: #e8e7e7;
+  padding: 0.25em 0.4em;
+  border-radius: 20px;
 }
 
 .mbtn {

@@ -6,15 +6,66 @@
           class="fa fa-home pointer-icon"
           aria-hidden="true"
           (click)="navigateToHome()"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/'
+          }"
         ></i>
       </li>
-      <li><a [routerLink]="['/about-us']">About Us</a></li>
-      <li><a [routerLink]="['/curriculum']">Curriculum</a></li>
-      <li><a [routerLink]="['/admissions']">Admissions</a></li>
-      <li><a [routerLink]="['/franchise']">Franchise</a></li>
+      <li>
+        <a
+          [routerLink]="['/about-us']"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/about-us'
+          }"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/curriculum']"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/curriculum'
+          }"
+          >Curriculum</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/admissions']"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/admissions'
+          }"
+          >Admissions</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/franchise']"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/franchise'
+          }"
+          >Franchise</a
+        >
+      </li>
       <li><a [routerLink]="['/']">Branches</a></li>
-      <li><a [routerLink]="['/books-and-beyond']">Books & Beyond</a></li>
-      <li><a [routerLink]="['/events-and-gallery']">Events & Gallery</a></li>
+      <li>
+        <a
+          [routerLink]="['/books-and-beyond']"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/books-and-beyond'
+          }"
+          >Books & Beyond</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/events-and-gallery']"
+          [ngClass]="{
+            'header-nav-item-active': router.url == '/events-and-gallery'
+          }"
+          >Events & Gallery</a
+        >
+      </li>
       <li><a [routerLink]="['/']">Contact Us</a></li>
     </ul>
   </nav>

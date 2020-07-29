@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-admissions-page',
-  templateUrl: './admissions-page.component.html',
-  styleUrls: ['./admissions-page.component.scss']
+  selector: "app-admissions-page",
+  templateUrl: "./admissions-page.component.html",
+  styleUrls: ["./admissions-page.component.scss"],
 })
 export class AdmissionsPageComponent implements OnInit {
+  image = "/assets/img/aboutUs.jpg";
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
