@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from "@angular/core";
 export class TextInfoBlockComponent implements OnInit {
   @Input() title: string = "";
   @Input() text: string = "";
+  @Input() additionalText: string = "";
 
   constructor() {}
 

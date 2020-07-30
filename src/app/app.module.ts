@@ -24,6 +24,7 @@ import { LeadershipComponent } from './pages/about-us-page/leadership/leadership
 import { ExtrasComponent } from './pages/about-us-page/extras/extras.component';
 import { MoreToExploreComponent } from './components/more-to-explore/more-to-explore.component';
 import { TextInfoBlockComponent } from './components/text-info-block/text-info-block.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { TextInfoBlockComponent } from './components/text-info-block/text-info-b
     ExtrasComponent,
     MoreToExploreComponent,
     TextInfoBlockComponent,
+    AccordionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
