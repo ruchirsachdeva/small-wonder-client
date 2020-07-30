@@ -1,0 +1,107 @@
+@import "../../../assets/styles/variables.scss";
+
+.footerNew {
+  background: url(/assets/img/footer-background.png) repeat;
+  color: $white-primary;
+  position: relative;
+  padding-top: 2em;
+
+  input {
+    border-radius: 20px;
+  }
+
+  .rounded-button {
+    border-radius: 20px;
+    background: $button-primary;
+    color: #fff;
+    padding: 0.25em 1.5em;
+    position: relative;
+    right: 3em;
+    z-index: 1000;
+  }
+}
+
+.footerNew-secondary-nav {
+  margin: 3em 0 1em;
+  border-top: 1px dashed $white-primary;
+  border-bottom: 1px dashed $white-primary;
+
+  ul {
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+      a {
+        padding: 10px 1em !important;
+        color: #fff;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.footerNew-third-nav {
+  ul {
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+      a {
+        padding: 10px 1em !important;
+        color: #fff;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.footer-info-bar {
+  display: flex;
+  justify-content: center;
+  a {
+    margin: 0 0 0 10px;
+    i {
+      padding: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .fa-facebook-official {
+      background: #3c58a1;
+      color: #fff;
+    }
+
+    .fa-instagram {
+      color: #fff;
+      background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888
+      );
+    }
+    .fa-youtube {
+      background: #fe1f1f;
+      color: #fff;
+    }
+  }
+}
+
+.logo-img-footer {
+  width: 150px;
+  height: auto;
+  background: $white-primary;
+  z-index: 1000;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+.footerNew-fourth-nav {
+  padding-bottom: 1em;
+  margin-top: 1em;
+}
