@@ -8,6 +8,10 @@ body {
   cursor: pointer;
 }
 
+.relative {
+  position: relative;
+}
+
 .navbar-container {
   background: $white-primary;
   margin-bottom: 3em;
