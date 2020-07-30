@@ -22,6 +22,8 @@ import { AboutUSComponent } from './pages/about-us-page/about-us/about-us.compon
 import { HistoryComponent } from './pages/about-us-page/history/history.component';
 import { LeadershipComponent } from './pages/about-us-page/leadership/leadership.component';
 import { ExtrasComponent } from './pages/about-us-page/extras/extras.component';
+import { MoreToExploreComponent } from './components/more-to-explore/more-to-explore.component';
+import { TextInfoBlockComponent } from './components/text-info-block/text-info-block.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { ExtrasComponent } from './pages/about-us-page/extras/extras.component';
     HistoryComponent,
     LeadershipComponent,
     ExtrasComponent,
+    MoreToExploreComponent,
+    TextInfoBlockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

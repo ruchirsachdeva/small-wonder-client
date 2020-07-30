@@ -1,6 +1,14 @@
 @import "../../../assets/styles/variables.scss";
 
 // page specific elements
+
+#nav-block {
+  position: absolute;
+  right: 4em;
+  top: -5em;
+  z-index: 1000;
+}
+
 #nav-up-rectangle {
   width: 18em;
   height: 15em;
@@ -12,19 +20,25 @@
     position: relative;
     top: 2em;
     margin: 0;
+    padding-left: 0;
+
     li {
       border-bottom: solid 1px $white-primary;
       padding: 0 1em;
+      list-style-type: none;
+      padding: 0.2em 1em;
       a {
         color: $white-primary;
-        font-weight: 500;
         font-size: 0.9em;
+        font-weight: 700;
         &:hover {
-          font-weight: 500;
           color: $white-primary;
           text-decoration: none;
           background: none;
-          padding: 1em 0;
+          padding-top: 0.25em;
+          padding-bottom: 0.25em;
+          font-size: 0.8em;
+          font-weight: 500;
         }
       }
     }
@@ -36,10 +50,4 @@
   border-left: 9em solid transparent;
   border-right: 9em solid transparent;
   border-top: 3em solid $button-primary;
-}
-
-#nav-block {
-  position: absolute;
-  right: 4em;
-  top: -5em;
 }

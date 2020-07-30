@@ -1,0 +1,20 @@
+@import "../../../../assets/styles/variables.scss";
+
+.glance-component {
+  width: 100%;
+  padding: 3em 0;
+  background: #fff;
+}
+
+.glance-item {
+  width: 70%;
+  text-align: center;
+  border: 1px solid;
+  padding-top: 1em;
+  height: 7em;
+
+  h2 {
+    color: $button-primary;
+    margin-bottom: 0;
+  }
+}
