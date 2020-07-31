@@ -1,0 +1,36 @@
+<div class="home-curr-section">
+  <div class="container">
+    <div class="title_sec">
+      <p>
+        It’s fun to be here
+      </p>
+      <h3>Our Curriculum</h3>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+          (breakpoint)="breakpoint($event)"
+          (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of curriculumList" class="slide">
+            <app-carousel-info-card
+              [imgSrc]="item.imgSrc"
+              [title]="item.title"
+              [content]="item.content"
+            ></app-carousel-info-card>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn mbtn">Know More</button>
+    </div>
+  </div>
+</div>
