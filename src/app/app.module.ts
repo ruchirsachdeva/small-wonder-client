@@ -25,6 +25,8 @@ import { ExtrasComponent } from './pages/about-us-page/extras/extras.component';
 import { MoreToExploreComponent } from './components/more-to-explore/more-to-explore.component';
 import { TextInfoBlockComponent } from './components/text-info-block/text-info-block.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { ImageTextInfoBlockComponent } from './components/image-text-info-block/image-text-info-block.component';
+import { ImageIntroCardComponent } from './components/image-intro-card/image-intro-card.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     MoreToExploreComponent,
     TextInfoBlockComponent,
     AccordionComponent,
+    ImageTextInfoBlockComponent,
+    ImageIntroCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
