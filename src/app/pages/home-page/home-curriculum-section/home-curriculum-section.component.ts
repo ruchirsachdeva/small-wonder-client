@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-home-curriculum-section",
@@ -6,46 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home-curriculum-section.component.scss"],
 })
 export class HomeCurriculumSectionComponent implements OnInit {
-  // slides = [342, 453, 846, 855, 234, 564, 744, 243];
-
-  curriculumList = [
-    {
-      imgSrc: "/assets/img/more-explore-1.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/girl-book.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/kids-books.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/more-explore-1.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/girl-book.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/kids-books.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-  ];
+  @Input() titleIntro = "";
+  @Input() title = "";
+  @Input() displayList = [];
+  @Input() type = "curriculum";
 
   slideConfig = {
     slidesToShow: 3,

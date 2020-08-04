@@ -33,6 +33,7 @@ import { HomeCurriculumSectionComponent } from "./pages/home-page/home-curriculu
 import { CarouselInfoCardComponent } from './components/carousel-info-card/carousel-info-card.component';
 import { PageBreakSectionComponent } from './pages/home-page/page-break-section/page-break-section.component';
 import { BranchInfoSectionComponent } from './pages/home-page/branch-info-section/branch-info-section.component';
+import { CarouselInfoCardEventComponent } from './components/carousel-info-card-event/carousel-info-card-event.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { BranchInfoSectionComponent } from './pages/home-page/branch-info-sectio
     CarouselInfoCardComponent,
     PageBreakSectionComponent,
     BranchInfoSectionComponent,
+    CarouselInfoCardEventComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],

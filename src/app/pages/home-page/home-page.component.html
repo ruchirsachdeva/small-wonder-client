@@ -1,5 +1,16 @@
 <app-carousel-image-section [images]="images"></app-carousel-image-section>
 <app-home-intro-section></app-home-intro-section>
-<app-home-curriculum-section></app-home-curriculum-section>
+<app-home-curriculum-section
+  [displayList]="curriculumList"
+  [titleIntro]="'It’s fun to be here'"
+  [title]="'Our Curriculum'"
+></app-home-curriculum-section>
 <app-page-break-section></app-page-break-section>
 <app-branch-info-section></app-branch-info-section>
+<!-- events -->
+<app-home-curriculum-section
+  [displayList]="eventList"
+  [titleIntro]="'Events and Functions'"
+  [title]="'Recent Events'"
+  [type]="'event'"
+></app-home-curriculum-section>

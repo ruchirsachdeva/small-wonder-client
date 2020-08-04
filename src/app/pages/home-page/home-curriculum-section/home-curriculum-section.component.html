@@ -2,12 +2,12 @@
   <div class="container">
     <div class="title_sec">
       <p>
-        It’s fun to be here
+        {{ titleIntro }}
       </p>
-      <h3>Our Curriculum</h3>
+      <h3>{{ title }}</h3>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-10">
+      <div class="col-lg-10" *ngIf="type == 'curriculum'">
         <!-- slick carousel component -->
         <ngx-slick-carousel
           class="carousel"
@@ -18,12 +18,35 @@
           (afterChange)="afterChange($event)"
           (beforeChange)="beforeChange($event)"
         >
-          <div ngxSlickItem *ngFor="let item of curriculumList" class="slide">
+          <div ngxSlickItem *ngFor="let item of displayList" class="slide">
             <app-carousel-info-card
               [imgSrc]="item.imgSrc"
               [title]="item.title"
               [content]="item.content"
             ></app-carousel-info-card>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+
+      <div class="col-lg-10" *ngIf="type == 'event'">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+          (breakpoint)="breakpoint($event)"
+          (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of displayList" class="slide">
+            <app-carousel-info-card-event
+              [title]="item.title"
+              [content]="item.content"
+              [date]="item.date"
+              [numComments]="item.numComments"
+              [imgSrc]="item.imgSrc"
+            ></app-carousel-info-card-event>
           </div>
         </ngx-slick-carousel>
       </div>
