@@ -1,0 +1,38 @@
+@import "../../../../assets/styles/variables.scss";
+
+.page-break-section {
+  width: 100%;
+  padding: 3em 0;
+  background: url("/assets/img/home-page-break-bg.png") no-repeat bottom;
+  background-size: cover;
+  position: relative;
+
+  h3,
+  h2 {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: "Nunito", sans-serif;
+  }
+}
+
+.pb_img_2 {
+  background: url("/assets/img/bg-widget-2.png") no-repeat;
+  width: 83px;
+  height: 54px;
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+}
+
+.pb_img_3 {
+  background: url("/assets/img/bg-widget-3.png") no-repeat;
+  width: 76px;
+  height: 58px;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
