@@ -1,0 +1,46 @@
+<div class="branch-info-section">
+  <div class="container">
+    <div class="title_sec">
+      <p>
+        It’s fun to be here
+      </p>
+      <h3>Our Branches</h3>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of branchList" class="slide">
+            <!-- branch info card-->
+            <div class="branch-info-card">
+              <a href="/#" class="row"
+                ><figure class="col-lg-4"><img [src]="item.imgSrc" /></figure>
+                <div class="col-lg-8">
+                  <p class="branch-info-card-title">{{ item.title }}</p>
+                  <p class="subText">{{ item.address }}</p>
+                  <p class="subText">
+                    <strong
+                      >{{ item.subText }}
+                      <i
+                        class="fa fa-long-arrow-right"
+                        *ngIf="item.showArrow"
+                      ></i
+                    ></strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn mbtn">Know More</button>
+    </div>
+  </div>
+</div>

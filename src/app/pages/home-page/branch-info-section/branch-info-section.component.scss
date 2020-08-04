@@ -1,0 +1,104 @@
+@import "../../../../assets/styles/variables.scss";
+
+.branch-info-section {
+  width: 100%;
+  padding: 3em 0;
+  background: $white-primary;
+}
+
+.title_sec {
+  text-align: center;
+  margin: 0 0 2em;
+
+  p {
+    margin: 0;
+    color: $button-primary;
+    font-size: 25px;
+    line-height: 20px;
+    font-family: Shadows Into Light Two, cursive;
+  }
+}
+
+.branch-info-card {
+  padding: 7px;
+  min-height: 8em;
+  width: 18em;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: $white-primary;
+
+    figure {
+      margin-bottom: 0;
+      img {
+        margin: 0;
+        width: 6em;
+        height: 7em;
+      }
+    }
+  }
+}
+
+.branch-info-card-title {
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  line-height: 1;
+  font-size: 1.2em;
+}
+
+.subText {
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1;
+
+  strong {
+    position: absolute;
+    bottom: 0.25em;
+  }
+}
+
+.slide:nth-child(1) .branch-info-card {
+  background: #bdcee9;
+}
+
+.slide:nth-child(2) .branch-info-card {
+  background: #9ed9bc;
+}
+
+.slide:nth-child(3) .branch-info-card {
+  background: #ffc592;
+}
+
+::ng-deep .nav-btn {
+  height: 41px !important;
+  width: 41px !important;
+}
+::ng-deep .prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+::ng-deep .prev-slide,
+::ng-deep .next-slide {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+}
+
+::ng-deep .prev-slide {
+  background: url(/assets/img/prev-item.png) no-repeat;
+  left: -50px !important;
+}
+::ng-deep .next-slide {
+  background: url(/assets/img/next-item.png) no-repeat;
+  right: -50px !important;
+}

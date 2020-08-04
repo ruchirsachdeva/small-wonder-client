@@ -31,6 +31,8 @@ import { ImageIntroCardComponent } from "./components/image-intro-card/image-int
 import { HomeIntroSectionComponent } from "./pages/home-page/home-intro-section/home-intro-section.component";
 import { HomeCurriculumSectionComponent } from "./pages/home-page/home-curriculum-section/home-curriculum-section.component";
 import { CarouselInfoCardComponent } from './components/carousel-info-card/carousel-info-card.component';
+import { PageBreakSectionComponent } from './pages/home-page/page-break-section/page-break-section.component';
+import { BranchInfoSectionComponent } from './pages/home-page/branch-info-section/branch-info-section.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { CarouselInfoCardComponent } from './components/carousel-info-card/carou
     HomeIntroSectionComponent,
     HomeCurriculumSectionComponent,
     CarouselInfoCardComponent,
+    PageBreakSectionComponent,
+    BranchInfoSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
