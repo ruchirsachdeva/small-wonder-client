@@ -8,7 +8,7 @@ import { Router, Params } from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
   contactButtonText: string = "Call Us Today! (+91 1234 12345)";
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
 
   ngOnInit() {}
 
