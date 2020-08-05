@@ -34,6 +34,8 @@ import { CarouselInfoCardComponent } from './components/carousel-info-card/carou
 import { PageBreakSectionComponent } from './pages/home-page/page-break-section/page-break-section.component';
 import { BranchInfoSectionComponent } from './pages/home-page/branch-info-section/branch-info-section.component';
 import { CarouselInfoCardEventComponent } from './components/carousel-info-card-event/carousel-info-card-event.component';
+import { ContactFormComponent } from './pages/home-page/contact-form/contact-form.component';
+import { FranchiseOpportunityComponent } from './pages/home-page/franchise-opportunity/franchise-opportunity.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +69,8 @@ import { CarouselInfoCardEventComponent } from './components/carousel-info-card-
     PageBreakSectionComponent,
     BranchInfoSectionComponent,
     CarouselInfoCardEventComponent,
+    ContactFormComponent,
+    FranchiseOpportunityComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
