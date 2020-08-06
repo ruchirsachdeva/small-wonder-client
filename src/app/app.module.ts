@@ -36,6 +36,8 @@ import { BranchInfoSectionComponent } from './pages/home-page/branch-info-sectio
 import { CarouselInfoCardEventComponent } from './components/carousel-info-card-event/carousel-info-card-event.component';
 import { ContactFormComponent } from './pages/home-page/contact-form/contact-form.component';
 import { FranchiseOpportunityComponent } from './pages/home-page/franchise-opportunity/franchise-opportunity.component';
+import { SchoolAgeBreakComponent } from './pages/home-page/school-age-break/school-age-break.component';
+import { ParentsTestimonialComponent } from './pages/home-page/parents-testimonial/parents-testimonial.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +73,8 @@ import { FranchiseOpportunityComponent } from './pages/home-page/franchise-oppor
     CarouselInfoCardEventComponent,
     ContactFormComponent,
     FranchiseOpportunityComponent,
+    SchoolAgeBreakComponent,
+    ParentsTestimonialComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],

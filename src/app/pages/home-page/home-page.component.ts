@@ -82,6 +82,24 @@ export class HomePageComponent implements OnInit {
     },
   ];
 
+  schoolAgeBreakList = [
+    {
+      title: "Preschool",
+      ageRange: "18 months - 3 years",
+      imgSrc: "/assets/img/more-explore-1.png",
+    },
+    {
+      title: "Kindergarten",
+      ageRange: "3 - 6 years",
+      imgSrc: "/assets/img/more-explore-2.png",
+    },
+    {
+      title: "Middle School",
+      ageRange: "6 - 10 years",
+      imgSrc: "/assets/img/more-explore-3.png",
+    },
+  ];
+
   constructor() {}
 
   ngOnInit() {
