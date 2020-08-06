@@ -82,6 +82,60 @@ export class HomePageComponent implements OnInit {
     },
   ];
 
+  schoolAgeBreakList = [
+    {
+      title: "Preschool",
+      ageRange: "18 months - 3 years",
+      imgSrc: "/assets/img/more-explore-1.png",
+    },
+    {
+      title: "Kindergarten",
+      ageRange: "3 - 6 years",
+      imgSrc: "/assets/img/more-explore-2.png",
+    },
+    {
+      title: "Middle School",
+      ageRange: "6 - 10 years",
+      imgSrc: "/assets/img/more-explore-3.png",
+    },
+    {
+      title: "High School",
+      ageRange: "10 - 16 years",
+      imgSrc: "/assets/img/more-explore-2.png",
+    },
+  ];
+
+  testimonialList = [
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "Barry Allen",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "Kevin Smith",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "John Doe",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "Barry Allen",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+  ];
+
   constructor() {}
 
   ngOnInit() {
