@@ -1,0 +1,18 @@
+<div class="left-aligned-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img [src]="imgSrc" alt="left-aligned-img-curriculum" />
+      </div>
+      <div class="col-md-7">
+        <p class="section-title">{{ title }}</p>
+        <p>{{ content }}</p>
+        <ul>
+          <li *ngFor="let item of listItems">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
