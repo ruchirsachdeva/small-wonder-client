@@ -1,20 +1,22 @@
-<ngb-carousel *ngIf="images" class="adjust-logo">
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="images[0]" alt="Random first slide" />
+<div
+  id="carousel-home-page"
+  class="carousel slide adjust-logo"
+  data-ride="carousel"
+>
+  <!--Indicators-->
+
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <!--First slide-->
+    <div class="carousel-item active slide-home-page slide-1">
+      <div class="container text-center"></div>
     </div>
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <!--/First slide-->
+    <!--Second slide-->
+    <div class="carousel-item slide-home-page slide-2">
+      <div class="container text-center"></div>
     </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="images[1]" alt="Random second slide" />
-    </div>
-    <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
+    <!--/Second slide-->
+  </div>
+</div>
