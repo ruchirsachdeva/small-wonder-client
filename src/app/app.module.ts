@@ -38,6 +38,9 @@ import { ContactFormComponent } from './pages/home-page/contact-form/contact-for
 import { FranchiseOpportunityComponent } from './pages/home-page/franchise-opportunity/franchise-opportunity.component';
 import { SchoolAgeBreakComponent } from './pages/home-page/school-age-break/school-age-break.component';
 import { ParentsTestimonialComponent } from './pages/home-page/parents-testimonial/parents-testimonial.component';
+import { LeftAlignedImageComponent } from './pages/curriculum-page/left-aligned-image/left-aligned-image.component';
+import { RightAlignedImageComponent } from './pages/curriculum-page/right-aligned-image/right-aligned-image.component';
+import { TextInfoBlockFullComponent } from './components/text-info-block-full/text-info-block-full.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +78,9 @@ import { ParentsTestimonialComponent } from './pages/home-page/parents-testimoni
     FranchiseOpportunityComponent,
     SchoolAgeBreakComponent,
     ParentsTestimonialComponent,
+    LeftAlignedImageComponent,
+    RightAlignedImageComponent,
+    TextInfoBlockFullComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
