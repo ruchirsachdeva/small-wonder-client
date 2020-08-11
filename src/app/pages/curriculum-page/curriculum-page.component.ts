@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CurriculumPageComponent implements OnInit {
   image = "/assets/img/school-building.jpg";
+  title: string = "curriculum";
 
   sectionHeading1: string = "Lorem Ipsum dolor sit";
   sectionText1: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

@@ -41,6 +41,7 @@ import { ParentsTestimonialComponent } from './pages/home-page/parents-testimoni
 import { LeftAlignedImageComponent } from './pages/curriculum-page/left-aligned-image/left-aligned-image.component';
 import { RightAlignedImageComponent } from './pages/curriculum-page/right-aligned-image/right-aligned-image.component';
 import { TextInfoBlockFullComponent } from './components/text-info-block-full/text-info-block-full.component';
+import { BackgroundImgTextComponent } from './components/background-img-text/background-img-text.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { TextInfoBlockFullComponent } from './components/text-info-block-full/te
     LeftAlignedImageComponent,
     RightAlignedImageComponent,
     TextInfoBlockFullComponent,
+    BackgroundImgTextComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
