@@ -42,6 +42,7 @@ import { LeftAlignedImageComponent } from './pages/curriculum-page/left-aligned-
 import { RightAlignedImageComponent } from './pages/curriculum-page/right-aligned-image/right-aligned-image.component';
 import { TextInfoBlockFullComponent } from './components/text-info-block-full/text-info-block-full.component';
 import { BackgroundImgTextComponent } from './components/background-img-text/background-img-text.component';
+import { InputFormComponent } from './pages/franchise-page/input-form/input-form.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { BackgroundImgTextComponent } from './components/background-img-text/bac
     RightAlignedImageComponent,
     TextInfoBlockFullComponent,
     BackgroundImgTextComponent,
+    InputFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
