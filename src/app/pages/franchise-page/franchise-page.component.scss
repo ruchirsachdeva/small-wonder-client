@@ -1,0 +1,35 @@
+@import "../../../assets/styles/variables.scss";
+
+.franchise-redirects {
+  padding: 3em 0;
+}
+
+.circle {
+  height: 7em;
+  width: 7em;
+  background-color: $button-primary;
+  border-radius: 50%;
+  display: block;
+}
+
+.block-heading {
+  width: 80%;
+
+  p {
+    font-size: 2em;
+    background: $background-light-grey;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.25em;
+  }
+}
+
+.block-text {
+  width: 80%;
+  text-align: center;
+}
+
+.block-redirect-btn {
+  background: $button-primary;
+  color: $white-primary;
+}

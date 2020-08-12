@@ -10,6 +10,7 @@ import { BooksAndBeyondPageComponent } from "./pages/books-and-beyond-page/books
 import { BlogPageComponent } from "./pages/blog-page/blog-page.component";
 import { ScheduleTourPageComponent } from "./pages/schedule-tour-page/schedule-tour-page.component";
 import { ShoonyaPageComponent } from "./pages/shoonya-page/shoonya-page.component";
+import { ActivitiesPageComponent } from "./pages/activities-page/activities-page.component";
 import { AboutUSComponent } from "./pages/about-us-page/about-us/about-us.component";
 import { HistoryComponent } from "./pages/about-us-page/history/history.component";
 import { LeadershipComponent } from "./pages/about-us-page/leadership/leadership.component";
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: "curriculum", component: CurriculumPageComponent },
   { path: "admissions", component: AdmissionsPageComponent },
   { path: "franchise", component: FranchisePageComponent },
+  { path: "activities", component: ActivitiesPageComponent },
   { path: "events-and-gallery", component: EventsAndGalleryPageComponent },
   { path: "books-and-beyond", component: BooksAndBeyondPageComponent },
   { path: "blog", component: BlogPageComponent },

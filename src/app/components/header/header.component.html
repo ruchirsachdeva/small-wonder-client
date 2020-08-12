@@ -1,89 +1,3 @@
-<!-- <div class="navbar-container">
-  <nav>
-    <ul>
-      <li>
-        <i
-          class="fa fa-home pointer-icon"
-          aria-hidden="true"
-          (click)="navigateToHome()"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/'
-          }"
-        ></i>
-      </li>
-      <li>
-        <a
-          [routerLink]="['/about-us']"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/about-us'
-          }"
-          >About Us</a
-        >
-      </li>
-      <li>
-        <a
-          [routerLink]="['/curriculum']"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/curriculum'
-          }"
-          >Curriculum</a
-        >
-      </li>
-      <li>
-        <a
-          [routerLink]="['/admissions']"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/admissions'
-          }"
-          >Admissions</a
-        >
-      </li>
-      <li>
-        <a
-          [routerLink]="['/franchise']"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/franchise'
-          }"
-          >Franchise</a
-        >
-      </li>
-      <li><a [routerLink]="['/']">Branches</a></li>
-      <li>
-        <a
-          [routerLink]="['/books-and-beyond']"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/books-and-beyond'
-          }"
-          >Books & Beyond</a
-        >
-      </li>
-      <li>
-        <a
-          [routerLink]="['/events-and-gallery']"
-          [ngClass]="{
-            'header-nav-item-active': router.url == '/events-and-gallery'
-          }"
-          >Events & Gallery</a
-        >
-      </li>
-      <li><a [routerLink]="['/']">Contact Us</a></li>
-    </ul>
-  </nav>
-  <hr class="style-dotted" />
-  <div class="header-info-container">
-    <div class="header-info-container__left">
-      <i class="fa fa-envelope icon-margins" aria-hidden="true"></i>
-      <button class="mbtn mbtn__secondary">{{ contactButtonText }}</button>
-    </div>
-    <img src="assets/img/logo.png" alt="logo" class="logo-img" />
-    <div class="header-info-container__right">
-      <i class="fa fa-facebook-official icon-margins" aria-hidden="true"></i>
-      <i class="fa fa-instagram icon-margins" aria-hidden="true"></i>
-      <i class="fa fa-youtube icon-margins" aria-hidden="true"></i>
-    </div>
-  </div>
-</div> -->
-
 <div>
   <nav class="navbar navbar-light bg-white navbar-expand-lg">
     <div class="top-nav">
@@ -142,7 +56,14 @@
               >
             </li>
             <li class="nav-item">
-              <a [routerLink]="['/']" class="nav-link">Branches</a>
+              <a
+                [routerLink]="['/activities']"
+                class="nav-link"
+                [ngClass]="{
+                  'active-link': router.url == '/activities'
+                }"
+                >Activities</a
+              >
             </li>
             <li class="nav-item">
               <a
