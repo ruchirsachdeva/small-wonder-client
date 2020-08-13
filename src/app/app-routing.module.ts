@@ -15,6 +15,8 @@ import { AboutUSComponent } from "./pages/about-us-page/about-us/about-us.compon
 import { HistoryComponent } from "./pages/about-us-page/history/history.component";
 import { LeadershipComponent } from "./pages/about-us-page/leadership/leadership.component";
 import { ExtrasComponent } from "./pages/about-us-page/extras/extras.component";
+import { ActivitiesListComponent } from "./pages/activities-page/activities-list/activities-list.component";
+import { ActivityDisplayComponent } from "./pages/activities-page/activity-display/activity-display.component";
 
 const routes: Routes = [
   { path: "", component: HomePageComponent },
@@ -34,7 +36,15 @@ const routes: Routes = [
   { path: "curriculum", component: CurriculumPageComponent },
   { path: "admissions", component: AdmissionsPageComponent },
   { path: "franchise", component: FranchisePageComponent },
-  { path: "activities", component: ActivitiesPageComponent },
+  {
+    path: "activities",
+    component: ActivitiesPageComponent,
+    children: [
+      { path: "", redirectTo: "all-activities", pathMatch: "full" },
+      { path: "all-activities", component: ActivitiesListComponent },
+      { path: "activity/:name", component: ActivityDisplayComponent },
+    ],
+  },
   { path: "events-and-gallery", component: EventsAndGalleryPageComponent },
   { path: "books-and-beyond", component: BooksAndBeyondPageComponent },
   { path: "blog", component: BlogPageComponent },

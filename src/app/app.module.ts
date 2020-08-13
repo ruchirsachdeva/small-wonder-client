@@ -45,6 +45,8 @@ import { BackgroundImgTextComponent } from './components/background-img-text/bac
 import { InputFormComponent } from './pages/franchise-page/input-form/input-form.component';
 import { ActivitiesPageComponent } from './pages/activities-page/activities-page.component';
 import { CornerStoreComponent } from './pages/activities-page/corner-store/corner-store.component';
+import { ActivitiesListComponent } from './pages/activities-page/activities-list/activities-list.component';
+import { ActivityDisplayComponent } from './pages/activities-page/activity-display/activity-display.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +91,8 @@ import { CornerStoreComponent } from './pages/activities-page/corner-store/corne
     InputFormComponent,
     ActivitiesPageComponent,
     CornerStoreComponent,
+    ActivitiesListComponent,
+    ActivityDisplayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],

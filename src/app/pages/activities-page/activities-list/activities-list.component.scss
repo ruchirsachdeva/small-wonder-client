@@ -1,0 +1,104 @@
+@import "../../../../assets/styles/variables.scss";
+
+.activities-list-section {
+  width: 100%;
+  padding: 5em 0 2em 0;
+  background: $white-primary;
+}
+
+.activity_img {
+  height: 30em;
+  width: 100%;
+  opacity: 0.9;
+  margin: 0 2.5% 5% 2.5%;
+  position: relative;
+}
+.img_1 {
+  //   background: url("/assets/img/kids_library.jpg") bottom;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/img/kids_library.jpg");
+
+  background-size: cover;
+  background-position: bottom;
+}
+
+.img_2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/img/kids_painting.jpg");
+
+  background-position: bottom;
+  background-size: cover;
+}
+
+.img_3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/img/kids_race.jpg");
+
+  background-position: bottom;
+  background-size: cover;
+}
+
+.img_4 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/img/kids_stage.jpg");
+
+  background-position: bottom;
+  background-size: cover;
+}
+
+.img_5 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/img/kids_discovery.jpg");
+
+  background-position: bottom;
+  background-size: cover;
+}
+
+.img_6 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/img/kids_yoga.jpg");
+
+  background-position: bottom;
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  color: $white-primary;
+  text-align: center;
+  top: 10%;
+  text-shadow: 0 1px 0 black;
+  font-family: sans-serif;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
