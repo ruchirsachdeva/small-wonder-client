@@ -28,4 +28,8 @@ export class ActivityDisplayComponent implements OnInit {
       this.activityName = params.get("name");
     });
   }
+
+  slickInit(e) {
+    console.log("slick initialized in Activity Display Component");
+  }
 }
