@@ -47,6 +47,7 @@ import { ActivitiesPageComponent } from './pages/activities-page/activities-page
 import { CornerStoreComponent } from './pages/activities-page/corner-store/corner-store.component';
 import { ActivitiesListComponent } from './pages/activities-page/activities-list/activities-list.component';
 import { ActivityDisplayComponent } from './pages/activities-page/activity-display/activity-display.component';
+import { LocationExploreComponent } from './pages/schedule-tour-page/location-explore/location-explore.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +94,7 @@ import { ActivityDisplayComponent } from './pages/activities-page/activity-displ
     CornerStoreComponent,
     ActivitiesListComponent,
     ActivityDisplayComponent,
+    LocationExploreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
