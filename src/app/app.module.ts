@@ -48,6 +48,7 @@ import { CornerStoreComponent } from './pages/activities-page/corner-store/corne
 import { ActivitiesListComponent } from './pages/activities-page/activities-list/activities-list.component';
 import { ActivityDisplayComponent } from './pages/activities-page/activity-display/activity-display.component';
 import { LocationExploreComponent } from './pages/schedule-tour-page/location-explore/location-explore.component';
+import { AdmissionStepComponent } from './pages/admissions-page/admission-step/admission-step.component';
 
 @NgModule({
   declarations: [
@@ -95,6 +96,7 @@ import { LocationExploreComponent } from './pages/schedule-tour-page/location-ex
     ActivitiesListComponent,
     ActivityDisplayComponent,
     LocationExploreComponent,
+    AdmissionStepComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],

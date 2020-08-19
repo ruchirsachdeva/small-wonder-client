@@ -1,1 +1,26 @@
-<app-image-section [image]="image"></app-image-section>
+<app-background-img-text [title]="title"></app-background-img-text>
+<div class="admission-intro-text">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 col-12">
+        <img
+          src="/assets/img/pencil-bulb.png"
+          alt="pencil-bulb"
+          class="intro-img"
+        />
+      </div>
+      <div class="col-md-8 col-12">
+        <p>{{ introText }}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let item of admissionInfoList">
+    <app-admission-step
+      [step]="item.step"
+      [title]="item.title"
+      [content]="item.content"
+      [bulletList]="item.bulletList"
+      [backgroundColor]="item.backgroundColor"
+    ></app-admission-step>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+@import "../../../../assets/styles/variables.scss";
+
+.admission-step-section {
+  padding: 3em 0;
+  width: 100%;
+
+  h4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: $button-primary;
+    font-weight: 700;
+  }
+}
+
+.borderLine {
+  border-bottom: 1px solid $button-primary;
+  width: 10%;
+}
