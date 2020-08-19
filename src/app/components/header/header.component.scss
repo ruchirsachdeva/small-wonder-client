@@ -112,3 +112,34 @@
   border-radius: 10px;
   position: relative;
 }
+
+@media only screen and (max-width: 992px) {
+  .top-nav {
+    border-bottom: none;
+  }
+
+  .nleft {
+    display: none;
+  }
+
+  .header-logo {
+    width: 100%;
+    min-width: 100px;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    top: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar-toggler {
+    font-size: 16px;
+  }
+  .nright a i {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+}

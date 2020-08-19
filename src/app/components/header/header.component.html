@@ -2,7 +2,19 @@
   <nav class="navbar navbar-light bg-white navbar-expand-lg">
     <div class="top-nav">
       <div class="container">
-        <div id="nav-collapse" class="navbar-collapse collapse">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#topNavCollapse"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="topNavCollapse" class="navbar-collapse collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
@@ -96,17 +108,16 @@
 
   <div class="container bottom-nav">
     <div class="row align-items-center">
-      <div class="col-md-4">
+      <div class="col-md-4 col-4">
         <div class="nleft">
           <a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
           <a href="#" class="phone"
-            ><i class="fa fa-phone mr-2"></i> Call Us Today! (+91 1234 567
-            890)</a
+            ><i class="fa fa-phone mr-2"></i> {{ contactButtonText }}</a
           >
         </div>
       </div>
 
-      <div class="text-center col-md-4">
+      <div class="text-center col-md-4 col-4">
         <a
           href="/"
           aria-current="page"
@@ -117,7 +128,7 @@
         </a>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 col-4">
         <div class="nright">
           <a href="#"><i class="fa fa-facebook-official"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
