@@ -1,5 +1,8 @@
+@import "../../../assets/styles/variables.scss";
+
 .adjust-logo {
-  z-index: -1;
+  z-index: 1;
+  position: relative;
 }
 
 .slide-home-page {
@@ -13,6 +16,46 @@
 }
 
 .slide-2 {
-  background: url("/assets/img/home-greenboard-bg.png") no-repeat bottom;
+  background: url("/assets/img/home-blackboard-bg.jpg") no-repeat bottom;
   background-size: cover;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 2%;
+  cursor: pointer;
+}
+
+h1 {
+  color: $white-primary;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 3.5em;
+  text-shadow: 1px 0 2px black;
+  span {
+    display: block;
+  }
+}
+
+.slide-1 {
+  h2 {
+    font-family: "Bangers", cursive;
+    color: $white-primary;
+    font-size: 3em;
+    text-shadow: 2px 0 2px black;
+  }
+}
+
+.slide-2 {
+  h1 {
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Shadows Into Light Two, cursive;
+    color: $white-primary;
+  }
 }

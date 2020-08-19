@@ -139,4 +139,10 @@ export class HomePageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  navigateToHomeIntro() {
+    document
+      .querySelector(".home-intro-section")
+      .scrollIntoView({ behavior: "smooth" });
+  }
 }

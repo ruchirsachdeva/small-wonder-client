@@ -1,4 +1,6 @@
-<app-carousel-image-section></app-carousel-image-section>
+<app-carousel-image-section
+  (navigateClicked)="navigateToHomeIntro()"
+></app-carousel-image-section>
 <app-home-intro-section></app-home-intro-section>
 <app-home-curriculum-section
   [displayList]="curriculumList"
