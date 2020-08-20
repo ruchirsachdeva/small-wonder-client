@@ -106,3 +106,50 @@
   padding-bottom: 1em;
   margin-top: 1em;
 }
+
+@media only screen and (max-width: 960px) {
+  .img-section {
+    margin-top: 2em;
+  }
+
+  .footerNew-top-section {
+    border-bottom: 1px dashed $white-primary;
+    padding-bottom: 2em;
+  }
+
+  .text-section {
+    margin-top: 2em;
+    text-align: left !important;
+  }
+
+  .footerNew-fourth-nav {
+    span {
+      display: block;
+    }
+  }
+
+  .footer-bottom-text {
+    text-align: center !important;
+    margin-top: 2em;
+  }
+
+  .footerNew-secondary-nav {
+    width: 50%;
+    display: inline-block;
+    border-bottom: none;
+    border-top: none;
+
+    ul {
+      flex-direction: column;
+    }
+  }
+
+  .footerNew-third-nav {
+    width: 50%;
+    display: inline-block;
+
+    ul {
+      flex-direction: column;
+    }
+  }
+}
