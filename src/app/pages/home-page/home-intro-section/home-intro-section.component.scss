@@ -72,3 +72,57 @@
 .sw_item4 {
   transform: rotate(-2deg) translateY(55px);
 }
+
+@media only screen and (max-width: 1160px) {
+  .sw_items {
+    background-size: contain;
+  }
+
+  .sw_item1 {
+    margin: 2px;
+    width: 15%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .sw_item2 {
+    margin: 2px;
+    width: 15%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .sw_item3 {
+    margin: 2px;
+    width: 15%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .sw_item4 {
+    margin: 2px;
+    width: 15%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sw_item {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .sw_item4 {
+    transform: rotate(-2deg) translateY(55px) translateX(20px);
+  }
+}

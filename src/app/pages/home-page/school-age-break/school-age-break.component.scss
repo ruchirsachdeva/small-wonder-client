@@ -39,8 +39,13 @@
   right: -50px !important;
 }
 
+::ng-deep .slick-active {
+  outline: none;
+}
+
 .age-break-box {
-  width: 18em;
+  width: 90%;
+  margin: auto;
   border-radius: 15px;
   text-align: center;
   color: $white-primary;
@@ -51,6 +56,10 @@
     p {
       margin-bottom: 0;
     }
+  }
+
+  h2 {
+    font-size: 1.8em;
   }
 
   figure {
@@ -75,4 +84,11 @@
 
 .slide:nth-child(3n + 0) .age-break-box {
   background: #d2ba16;
+}
+
+@media only screen and (max-width: 1000px) {
+  .age-break-box {
+    width: 80%;
+    margin: auto;
+  }
 }

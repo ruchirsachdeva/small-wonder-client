@@ -13,6 +13,11 @@ export class BranchInfoSectionComponent implements OnInit {
     prevArrow: "<div class='nav-btn prev-slide'></div>",
     dots: false,
     infinite: false,
+    responsive: [
+      { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+      { breakpoint: 1000, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+    ],
   };
 
   branchList = [

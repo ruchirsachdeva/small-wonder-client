@@ -36,3 +36,17 @@
   right: 15%;
   top: 15%;
 }
+
+@media only screen and (max-width: 600px) {
+  .pb_img_2 {
+    left: 5%;
+    bottom: 10%;
+    top: unset;
+  }
+
+  .pb_img_3 {
+    bottom: 15%;
+    right: 5%;
+    top: unset;
+  }
+}

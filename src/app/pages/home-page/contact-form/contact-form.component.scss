@@ -59,3 +59,14 @@
   width: 107px;
   height: 69px;
 }
+
+@media only screen and (max-width: 720px) {
+  .cf_img_1 {
+    bottom: 25%;
+    top: unset;
+  }
+
+  .cf_img_2 {
+    display: none;
+  }
+}
