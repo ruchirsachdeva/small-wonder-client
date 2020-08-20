@@ -112,3 +112,20 @@
   height: 120px;
   position: absolute;
 }
+
+@media only screen and (max-width: 1000px) {
+  .testimonial-box {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ::ng-deep .next-slide {
+    display: none !important;
+  }
+
+  ::ng-deep .prev-slide {
+    display: none !important;
+  }
+}

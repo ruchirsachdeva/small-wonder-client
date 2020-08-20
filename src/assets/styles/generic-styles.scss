@@ -147,16 +147,6 @@ hr.style-dotted {
   }
 }
 
-// .footer-info-bar {
-//   display: flex;
-//   justify-content: space-between;
-//   margin: 1% 8%;
-
-//   &__icons {
-//     margin-left: -5em;
-//   }
-// }
-
 hr.style-dotted-footer {
   background-color: $blue-primary;
   border-top: 1.5px dashed $white-primary;
@@ -183,5 +173,15 @@ hr.style-dotted-footer {
   img {
     width: 100%;
     height: 25em;
+  }
+}
+
+.desktop-wrapper {
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop-wrapper {
+    display: none;
   }
 }
