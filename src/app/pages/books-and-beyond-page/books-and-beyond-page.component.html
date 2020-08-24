@@ -4,6 +4,29 @@
   [content]="introSectionContent"
   [contentList]="introSectionContentList"
 ></app-learning-intro>
+<!-- day at small wonders -->
+<div class="day-section">
+  <div class="container">
+    <h3 class="text-center">{{ daySectionTitle }}</h3>
+
+    <p>{{ daySectionContent }}</p>
+    <img src="/assets/img/footer-background.png" alt="input-form-img" />
+  </div>
+</div>
+<!-- what children will learn -->
+<div class="children-learn-section">
+  <div class="container">
+    <h3 class="text-center">{{ childrenLearnSectionTitle }}</h3>
+    <div *ngFor="let item of childrenLearnSectionContent">
+      <app-learning-block
+        [heading]="item.heading"
+        [text]="item.text"
+        [color]="item.color"
+        [bulletPoints]="item.bulletPoints"
+      ></app-learning-block>
+    </div>
+  </div>
+</div>
 <app-learning-env-section
   [title]="envSectionTitle"
   [contentList]="contentList"
