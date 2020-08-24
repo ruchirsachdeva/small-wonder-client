@@ -1,0 +1,22 @@
+@import "../../../../assets/styles/variables.scss";
+
+.learning-intro-section {
+  padding: 3em 0;
+  width: 100%;
+  background: $white-primary;
+
+  h3 {
+    text-transform: uppercase;
+  }
+}
+
+.heading {
+  color: #8a2b3d;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.content-block {
+  width: 80%;
+  margin: auto;
+}

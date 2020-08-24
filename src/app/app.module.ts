@@ -49,6 +49,8 @@ import { ActivitiesListComponent } from './pages/activities-page/activities-list
 import { ActivityDisplayComponent } from './pages/activities-page/activity-display/activity-display.component';
 import { LocationExploreComponent } from './pages/schedule-tour-page/location-explore/location-explore.component';
 import { AdmissionStepComponent } from './pages/admissions-page/admission-step/admission-step.component';
+import { LearningEnvSectionComponent } from './pages/books-and-beyond-page/learning-env-section/learning-env-section.component';
+import { LearningIntroComponent } from './pages/books-and-beyond-page/learning-intro/learning-intro.component';
 
 @NgModule({
   declarations: [
@@ -97,6 +99,8 @@ import { AdmissionStepComponent } from './pages/admissions-page/admission-step/a
     ActivityDisplayComponent,
     LocationExploreComponent,
     AdmissionStepComponent,
+    LearningEnvSectionComponent,
+    LearningIntroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
