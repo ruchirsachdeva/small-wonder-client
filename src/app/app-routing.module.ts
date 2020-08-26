@@ -45,7 +45,10 @@ const routes: Routes = [
       { path: "activity/:name", component: ActivityDisplayComponent },
     ],
   },
-  { path: "events-and-gallery", component: EventsAndGalleryPageComponent },
+  {
+    path: "events-and-gallery",
+    component: EventsAndGalleryPageComponent,
+  },
   { path: "books-and-beyond", component: BooksAndBeyondPageComponent },
   { path: "blog", component: BlogPageComponent },
   { path: "schedule-tour", component: ScheduleTourPageComponent },

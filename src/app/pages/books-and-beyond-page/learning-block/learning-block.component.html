@@ -10,7 +10,8 @@
         *ngFor="let item of bulletPoints"
         class="bullet-points"
         [ngStyle]="{
-          'border-color': getColor()
+          'border-color': getColor(),
+          color: getColor()
         }"
       >
         <p>{{ item }}</p>
