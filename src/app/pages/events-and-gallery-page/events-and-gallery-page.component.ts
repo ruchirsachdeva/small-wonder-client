@@ -62,6 +62,7 @@ export class EventsAndGalleryPageComponent implements OnInit {
   }
 
   openModal(images) {
+    this.imageListInCarousel = [];
     if (images.length == 0) {
       return;
     }

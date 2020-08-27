@@ -123,7 +123,7 @@ export class EventsService {
         category: categoryConstants.SCHOOL_GALLERY,
         eventImage: "/assets/img/kids_library.jpg",
         imageList: [
-          "/assets/img/kids_library.jpg",
+          "/assets/img/kids_yoga.jpg",
           "/assets/img/kids_yoga.jpg",
           "/assets/img/kids_library.jpg",
         ],
