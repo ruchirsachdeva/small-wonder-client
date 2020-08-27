@@ -1,7 +1,8 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { EventsService } from "./events.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import * as categoryConstants from "./category.constants";
+import { OverlayComponent } from "../../components/overlay/overlay.component";
 
 @Component({
   selector: "app-events-and-gallery-page",
@@ -12,6 +13,10 @@ export class EventsAndGalleryPageComponent implements OnInit {
   title = "Events & Gallery";
   category: string = "";
   eventsList = [];
+
+  imageListInCarousel = [];
+  @ViewChild(OverlayComponent, { static: false })
+  imageModalRef: OverlayComponent;
 
   constructor(
     private eventsService: EventsService,
@@ -54,5 +59,13 @@ export class EventsAndGalleryPageComponent implements OnInit {
         break;
     }
     // console.log(this.eventsList);
+  }
+
+  openModal(images) {
+    if (images.length == 0) {
+      return;
+    }
+    this.imageListInCarousel = images;
+    this.imageModalRef.showModal();
   }
 }

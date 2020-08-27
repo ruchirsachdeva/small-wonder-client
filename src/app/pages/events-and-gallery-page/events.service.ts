@@ -18,7 +18,7 @@ export class EventsService {
     // containing 9 objects currently
     this.eventsList = [
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "January 12, 2020",
@@ -32,7 +32,7 @@ export class EventsService {
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "January 24, 2020",
@@ -40,13 +40,13 @@ export class EventsService {
         eventImage: "/assets/img/kids_library.jpg",
         imageList: [
           "/assets/img/kids_library.jpg",
-          "/assets/img/kids_library.jpg",
+          "/assets/img/kids-books.png",
           "/assets/img/kids_library.jpg",
         ],
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "September 12, 2020",
@@ -60,7 +60,7 @@ export class EventsService {
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "July 12, 2020",
@@ -88,7 +88,7 @@ export class EventsService {
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "September 12, 2019",
@@ -96,13 +96,13 @@ export class EventsService {
         eventImage: "/assets/img/kids_library.jpg",
         imageList: [
           "/assets/img/kids_library.jpg",
-          "/assets/img/kids_library.jpg",
+          "/assets/img/kids-books.png",
           "/assets/img/kids_library.jpg",
         ],
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "January 12, 2020",
@@ -116,7 +116,7 @@ export class EventsService {
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "January 12, 2020",
@@ -124,13 +124,13 @@ export class EventsService {
         eventImage: "/assets/img/kids_library.jpg",
         imageList: [
           "/assets/img/kids_library.jpg",
-          "/assets/img/kids_library.jpg",
+          "/assets/img/kids_yoga.jpg",
           "/assets/img/kids_library.jpg",
         ],
         videoList: [],
       },
       {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Lorem ipsum",
         description:
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         date: "January 12, 2020",
@@ -138,7 +138,7 @@ export class EventsService {
         eventImage: "/assets/img/kids_library.jpg",
         imageList: [
           "/assets/img/kids_library.jpg",
-          "/assets/img/kids_library.jpg",
+          "/assets/img/kids-books.png",
           "/assets/img/kids_library.jpg",
         ],
         videoList: [],

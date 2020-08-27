@@ -52,6 +52,7 @@ import { AdmissionStepComponent } from "./pages/admissions-page/admission-step/a
 import { LearningEnvSectionComponent } from "./pages/books-and-beyond-page/learning-env-section/learning-env-section.component";
 import { LearningIntroComponent } from "./pages/books-and-beyond-page/learning-intro/learning-intro.component";
 import { LearningBlockComponent } from "./pages/books-and-beyond-page/learning-block/learning-block.component";
+import { OverlayComponent } from './components/overlay/overlay.component';
 
 @NgModule({
   declarations: [
@@ -103,6 +104,7 @@ import { LearningBlockComponent } from "./pages/books-and-beyond-page/learning-b
     LearningEnvSectionComponent,
     LearningIntroComponent,
     LearningBlockComponent,
+    OverlayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
