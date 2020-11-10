@@ -11,6 +11,24 @@
     border-radius: 20px;
   }
 
+  .boatImage {
+    background: url("/assets/img/bg-widget-2.png") no-repeat;
+    width: 83px;
+    height: 90px;
+    top: 20%;
+    position: absolute;
+    left: 10%;
+  }
+
+  .planetImage {
+    background: url("/assets/img/bg-widget-3.png") no-repeat;
+    width: 83px;
+    height: 90px;
+    top: 20%;
+    position: absolute;
+    right: 10%;
+  }
+
   .rounded-button {
     border-radius: 20px;
     background: $button-primary;
