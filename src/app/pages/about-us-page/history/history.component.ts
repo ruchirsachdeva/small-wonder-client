@@ -6,11 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./history.component.scss"],
 })
 export class HistoryComponent implements OnInit {
-  text: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+  text: string = `SMALL WONDERS was established in the year 2002 which was the first kindergarten in the city, Panipat.
+   Small Wonders has carved a niche for itself and has emerged as a frontrunner amongst all schools in Panipat. 
+   From a promising beginning, the school has progressed to become an educational institution par excellence.
+   It is a whole new universe of learning, where the bounds of imagination are limitless, and each child explores ever expanding horizon.`;
 
   imageList = [];
   accordionData = [];
