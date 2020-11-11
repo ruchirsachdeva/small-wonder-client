@@ -10,3 +10,50 @@
   width: 80%;
   height: 10em;
 }
+
+.admission-applications{
+  color: white;
+  background-color: #8a2b3d;
+}
+
+.application-title{
+  text-align: center;
+  
+  .h2{
+    font-weight: 900;
+  }
+
+  
+}
+
+.card{
+  background-color: gainsboro;
+  color: black;
+  border-radius: 0%;
+  .card-body{
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+  }
+}
+
+.row{
+  margin-bottom: 0.75rem;
+}
+
+span{
+  font-size: 10px;
+}
+
+.col-4{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn{
+  background-color: #8a2b3d;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  border-radius: 0%;
+}
