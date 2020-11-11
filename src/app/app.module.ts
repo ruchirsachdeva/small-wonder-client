@@ -53,6 +53,9 @@ import { LearningEnvSectionComponent } from "./pages/books-and-beyond-page/learn
 import { LearningIntroComponent } from "./pages/books-and-beyond-page/learning-intro/learning-intro.component";
 import { LearningBlockComponent } from "./pages/books-and-beyond-page/learning-block/learning-block.component";
 import { OverlayComponent } from './components/overlay/overlay.component';
+import { ImageCardSectionComponent } from "./components/image-card-section/image-card-section.component";
+import { ImageCardTextComponent } from "./components/image-card-text/image-card-text.component";
+import { ImageRightTextInfoBlockComponent } from "./components/image-right-text-info-block/image-right-text-info-block.component";
 
 @NgModule({
   declarations: [
@@ -62,6 +65,8 @@ import { OverlayComponent } from './components/overlay/overlay.component';
     HomePageComponent,
     CarouselImageSectionComponent,
     ImageSectionComponent,
+    ImageCardSectionComponent,
+    ImageCardTextComponent,
     AboutUsPageComponent,
     CurriculumPageComponent,
     AdmissionsPageComponent,
@@ -79,6 +84,7 @@ import { OverlayComponent } from './components/overlay/overlay.component';
     TextInfoBlockComponent,
     AccordionComponent,
     ImageTextInfoBlockComponent,
+    ImageRightTextInfoBlockComponent,
     ImageIntroCardComponent,
     HomeIntroSectionComponent,
     HomeCurriculumSectionComponent,
