@@ -51,4 +51,9 @@ export class BranchInfoSectionComponent implements OnInit {
   slickInit(e) {
     console.log("slick initialized");
   }
+
+  goToBottom(){
+    
+  }
+
 }
