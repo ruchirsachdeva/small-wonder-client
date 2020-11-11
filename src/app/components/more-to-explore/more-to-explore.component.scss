@@ -3,6 +3,14 @@
   padding: 3em 0;
   background: #fff;
 
+  .rocketImage {
+    background: url("/assets/img/bg-widget-5.png") no-repeat;
+    width: 83px;
+    height: 90px;
+    position: absolute;
+    left: 20%;
+  }
+
   img {
     border-radius: 10px;
     width: 100%;
