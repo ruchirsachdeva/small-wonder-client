@@ -28,7 +28,7 @@
         </ngx-slick-carousel>
       </div>
 
-      <div class="col-lg-10" *ngIf="type == 'event'">
+      <div class="col-lg-10" *ngIf="type == 'events-and-gallery'">
         <!-- slick carousel component -->
         <ngx-slick-carousel
           class="carousel"
@@ -53,7 +53,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <button class="btn mbtn">Know More</button>
+      <button class="btn mbtn" routerLink='/{{type}}'>Know More</button>
     </div>
   </div>
 </div>

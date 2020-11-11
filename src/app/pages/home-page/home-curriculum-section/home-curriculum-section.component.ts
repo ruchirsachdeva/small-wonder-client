@@ -9,7 +9,7 @@ export class HomeCurriculumSectionComponent implements OnInit {
   @Input() titleIntro = "";
   @Input() title = "";
   @Input() displayList = [];
-  @Input() type = "curriculum";
+  @Input() type = "";
 
   slideConfig = {
     slidesToShow: 3,
