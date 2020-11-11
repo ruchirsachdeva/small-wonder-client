@@ -9,6 +9,8 @@ export class BlogPageComponent implements OnInit {
 
   constructor() { }
 
+  image = "/assets/img/school-building.jpg";
+
   ngOnInit() {
   }
 
