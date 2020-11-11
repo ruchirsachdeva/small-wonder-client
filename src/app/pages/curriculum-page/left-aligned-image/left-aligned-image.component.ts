@@ -10,6 +10,7 @@ export class LeftAlignedImageComponent implements OnInit {
   @Input() title: string = "";
   @Input() content: string = "";
   @Input() listItems = [];
+  @Input() listLinks = [];
 
   constructor() {}
 
