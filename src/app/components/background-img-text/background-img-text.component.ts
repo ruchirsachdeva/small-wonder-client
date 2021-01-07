@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class BackgroundImgTextComponent implements OnInit {
   @Input() title: string = "";
-  @Input() bgImage = "/assets/img/school-building.jpg";
+  @Input() bgImage : string="";
 
   constructor() {}
 
