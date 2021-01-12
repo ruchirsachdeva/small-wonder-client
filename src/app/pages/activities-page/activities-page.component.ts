@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ActivitiesPageComponent implements OnInit {
   title: string = "Activities";
+  bgImage: string ="/assets/img/activities_cover.jpg";
 
   testimonialList = [
     {
