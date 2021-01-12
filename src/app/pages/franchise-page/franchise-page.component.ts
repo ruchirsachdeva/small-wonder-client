@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./franchise-page.component.scss"],
 })
 export class FranchisePageComponent implements OnInit {
-  image = "";
+  bgImage: string = "/assets/img/franchise.jpg";
   title: string = "Franchise";
 
   sectionHeading1: string = `Become small wonder's licensee`;
