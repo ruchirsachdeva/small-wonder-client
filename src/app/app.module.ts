@@ -56,6 +56,8 @@ import { OverlayComponent } from './components/overlay/overlay.component';
 import { ImageCardSectionComponent } from "./components/image-card-section/image-card-section.component";
 import { ImageCardTextComponent } from "./components/image-card-text/image-card-text.component";
 import { ImageRightTextInfoBlockComponent } from "./components/image-right-text-info-block/image-right-text-info-block.component";
+import { ExploreSectionComponent } from "./pages/activities-page/explore-section/explore-section.component";
+
 
 @NgModule({
   declarations: [
@@ -111,6 +113,7 @@ import { ImageRightTextInfoBlockComponent } from "./components/image-right-text-
     LearningIntroComponent,
     LearningBlockComponent,
     OverlayComponent,
+    ExploreSectionComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
