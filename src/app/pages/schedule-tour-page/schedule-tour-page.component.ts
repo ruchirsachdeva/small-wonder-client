@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ScheduleTourPageComponent implements OnInit {
   title: string = "Schedule a tour";
+  bgImage: string = "/assets/img/school-building.jpg";
   locationExploreTitle: string = "Pick your Location";
 
   locationList = [
