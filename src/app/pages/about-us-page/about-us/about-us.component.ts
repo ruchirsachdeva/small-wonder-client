@@ -28,19 +28,23 @@ export class AboutUSComponent implements OnInit {
     this.imageList = [
       {
         imageUrl: "/assets/img/more-explore-1.png",
-        text: "Lorem Ipsum",
+        text: "Curriculum",
+        link: '/curriculum'
       },
       {
         imageUrl: "/assets/img/more-explore-2.png",
-        text: "Lorem Ipsum",
+        text: "Activities",
+        link: '/activities/all-activities'
       },
       {
         imageUrl: "/assets/img/more-explore-3.png",
-        text: "Lorem Ipsum",
+        text: "Books & Beyond",
+        link: '/books-and-beyond'
       },
       {
         imageUrl: "/assets/img/more-explore-1.png",
-        text: "Lorem Ipsum",
+        text: "Events & Gallery",
+        link: '/events-and-gallery'
       },
     ];
   }

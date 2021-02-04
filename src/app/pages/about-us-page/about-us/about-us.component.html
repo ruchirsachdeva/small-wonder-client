@@ -8,12 +8,11 @@
     <div class="row mt-5">
       <div *ngFor="let item of aboutUsItems" class="col-md-3">
         <div class="glance-item">
-          <h2>{{ item.value }}</h2>
           <p>{{ item.info }}</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<app-image-card-text [image]="image" [title]="imageCardTitle" [content]="imageCardContent"></app-image-card-text>
+<app-image-card-text [image]="image" [content]="imageCardContent"></app-image-card-text>
 <app-more-to-explore [imageList]="imageList"></app-more-to-explore>
