@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: "app-branch-info-section",
@@ -43,8 +44,7 @@ export class BranchInfoSectionComponent implements OnInit {
       showArrow: "",
     },
   ];
-
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -52,8 +52,8 @@ export class BranchInfoSectionComponent implements OnInit {
     console.log("slick initialized");
   }
 
-  goToBottom(){
-    
+  goToSchedulePage(){
+    this.router.navigateByUrl('/schedule-tour');
   }
 
 }
