@@ -4,7 +4,7 @@
     <div class="row mt-5">
       <div *ngFor="let image of imageList" class="col-md-3">
         <img [src]="image.imageUrl" alt="explore-more-image" />
-        <p>{{ image.text }}</p>
+        <a href="{{image.link}}">{{image.text}}</a>
       </div>
     </div>
   </div>
