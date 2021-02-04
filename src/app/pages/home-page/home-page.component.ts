@@ -11,40 +11,27 @@ export class HomePageComponent implements OnInit {
   curriculumList = [
     {
       imgSrc: "/assets/img/more-explore-1.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+      title: "KINDERGARTEN: FIRST STEP",
+      content: `Step into our Kindergarten (Pre-Primary) wing and you will be welcomed by engaged, lively and Happy Kids making the best of their moments in well-equipped and spacious Arena which is more like a HOME to them.`,
+      ageInterval: '2-5 years'
     },
     {
       imgSrc: "/assets/img/girl-book.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+      title: "PRIMARY WING: PICKING UP PACE",
+      content: `We ensure a seamless transition from the Pre- Primary to Classes 1 and 2 for our students to continue to enjoy areas of continuous provision, with the structure of the day becoming increasingly formal, in preparation for PRIMARY. `,
+      ageInterval: '5-6 years'
     },
     {
       imgSrc: "/assets/img/kids-books.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+      title: "SUSTAINING MOMENTUM",
+      content: ` High standards in the core skills of literacy and numeracy are maintained throughout, with academic rigour escalating in these classes to ensure each student achieves a momentum in their Primary Years.`,
+      ageInterval: '7-11 years'
     },
     {
       imgSrc: "/assets/img/more-explore-1.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/girl-book.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
-    {
-      imgSrc: "/assets/img/kids-books.png",
-      title: "Title here",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-    },
+      title: "STUDENT ASSESSMENT",
+      content: `The assessment plan of the school is keeping with the Periodic Assessments conducted to assess the understanding, application, and effort of the child in each of scholastic and co scholastic area. `,
+    }
   ];
 
   eventList = [
