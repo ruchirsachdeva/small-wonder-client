@@ -18,11 +18,6 @@ export class AdmissionsPageComponent implements OnInit {
       title: "Initial Application",
       content: `Enquiry Form: 
       To start the admissions procedure, all parents must fill in the enquiry form and submit the same to the school. APPLICATIONS FOR THE SESSION 2021-22 ARE OPEN.`,
-      bulletList: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      ],
       backgroundColor: "pink",
     },
     {
@@ -49,6 +44,13 @@ export class AdmissionsPageComponent implements OnInit {
         "Meeting with Principal: A brief meeting with the Principal is arranged to confirm the admission and welcome the child and parents to the SWWS family.",
       ],
       backgroundColor: "white",
+    },
+    {
+      step: 5,
+      title: "Admission Confirmation",
+      content: `The admission is confirmed, and parents need to pay fees to complete the admission formalities. A formal intimation of admission confirmation is sent within a week of payment of fees.
+      `,
+      backgroundColor: "pink",
     },
   ];
 

@@ -1,19 +1,5 @@
 <app-background-img-text [title]="title" [bgImage]="bgImage"></app-background-img-text>
 <div class="admission-intro-text">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4 col-12">
-        <img
-          src="/assets/img/pencil-bulb.png"
-          alt="pencil-bulb"
-          class="intro-img"
-        />
-      </div>
-      <div class="col-md-8 col-12">
-        <p>{{ introText }}</p>
-      </div>
-    </div>
-  </div>
   <div *ngFor="let item of admissionInfoList">
     <app-admission-step
       [step]="item.step"
@@ -39,8 +25,7 @@
       <div class="col-4">
         <div class="card">
          <div class="card-body">
-           <a><h6 style="font-weight: 900;">Application Process</h6></a>
-            <span>For 2020-2021 Candidates</span> <br><br>
+           <a><h6 style="font-weight: 900;">GRADE</h6></a>
          </div>
         </div>
       </div>
@@ -48,8 +33,7 @@
       <div class="col-4">
         <div class="card">
          <div class="card-body">
-           <a><h6 style="font-weight: 900;">Early Decision Applicants</h6></a>
-           <span>Apply by 2 September 2019 and get decision by 31 December 2019</span>
+           <a><h6 style="font-weight: 900;">AGE</h6></a>
          </div>
         </div>
       </div>
@@ -57,8 +41,7 @@
       <div class="col-4">
         <div class="card">
          <div class="card-body">
-           <a><h6 style="font-weight: 900;">Application Process</h6></a>
-           <span>Apply by 31 December 2019 and get decision by 31 March 2020</span>
+           <a><h6 style="font-weight: 900;">DATE BRACKET</h6></a>
          </div> 
         </div>
       </div>
@@ -70,24 +53,20 @@
       <div class="col-4">
         <div class="card">
          <div class="card-body">
-           Step-1: Initial Application
+           Toddlers
          </div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           lorem ipsum
-         </div>
+         <div class="card-body">2</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-          lorem ipsum
-         </div> 
+         <div class="card-body">01/08/2017 to 31/07/2018</div> 
         </div>
       </div>
 
@@ -97,25 +76,19 @@
     <div class="row">
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           Step-2: Admission Staff Interview
-         </div>
+         <div class="card-body">(Pre-Nursery)</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           lorem ipsum
-         </div>
+         <div class="card-body">3</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-          lorem ipsum
-         </div> 
+         <div class="card-body">01/08/2016 to 31/07/2017</div> 
         </div>
       </div>
 
@@ -125,25 +98,19 @@
     <div class="row">
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           Step-3: Full Application and Testing
-         </div>
+         <div class="card-body">Nursery</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           lorem ipsum
-         </div>
+         <div class="card-body">4</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-          lorem ipsum
-         </div> 
+         <div class="card-body">01/04/2015 to 31/03/2016</div> 
         </div>
       </div>
 
@@ -153,57 +120,157 @@
     <div class="row">
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           Step-4: Faculty Interviews
-         </div>
+         <div class="card-body">KG</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           lorem ipsum
-         </div>
+         <div class="card-body">5</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-          lorem ipsum
-         </div> 
+         <div class="card-body">01/04/2014 to 31/03/2015</div> 
         </div>
       </div>
 
     </div>
 
-    <!--Row 5-->
+    <!--Row 6-->
     <div class="row">
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           Acceptance Notifications
-         </div>
+         <div class="card-body">Grade 1</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-           lorem ipsum
-         </div>
+         <div class="card-body">6</div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card">
-         <div class="card-body">
-          lorem ipsum
-         </div> 
+         <div class="card-body">01/04/2013 to 31/03/2014</div> 
         </div>
       </div>
 
-    </div><br>
+    </div>
+    
+    <!--Row 7-->
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">Grade 2</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">7</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">01/04/2012 to 31/03/2013</div> 
+        </div>
+      </div>
+
+    </div>
+
+    <!--Row 8-->
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">Grade 3</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">8</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">01/04/2011 to 31/03/2012</div> 
+        </div>
+      </div>
+
+    </div>
+
+    <!--Row 9-->
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">Grade 4</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">9</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">01/04/2010 to 31/03/2011</div> 
+        </div>
+      </div>
+
+    </div>
+    
+    <!--Row 10-->
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">Grade 5</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">10</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">01/04/2009 to 31/03/2010</div> 
+        </div>
+      </div>
+
+    </div>
+
+    <!--Row 11-->
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">Grade 6</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">11</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+         <div class="card-body">01/04/2008 to 31/03/2009</div> 
+        </div>
+      </div>
+
+    </div>
+
+    <br>
   </div>
 
   <div class="container text-center">
