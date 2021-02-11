@@ -57,6 +57,7 @@ import { ImageCardSectionComponent } from "./components/image-card-section/image
 import { ImageCardTextComponent } from "./components/image-card-text/image-card-text.component";
 import { ImageRightTextInfoBlockComponent } from "./components/image-right-text-info-block/image-right-text-info-block.component";
 import { ExploreSectionComponent } from "./pages/activities-page/explore-section/explore-section.component";
+import { AdmissionInputFormComponent } from "./pages/admissions-page/admission-input-form/admission-input-form.component";
 
 
 @NgModule({
@@ -113,7 +114,8 @@ import { ExploreSectionComponent } from "./pages/activities-page/explore-section
     LearningIntroComponent,
     LearningBlockComponent,
     OverlayComponent,
-    ExploreSectionComponent
+    ExploreSectionComponent,
+    AdmissionInputFormComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule],
   providers: [],
