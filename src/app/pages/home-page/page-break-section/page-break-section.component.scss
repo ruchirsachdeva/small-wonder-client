@@ -50,3 +50,20 @@
     top: unset;
   }
 }
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  .page-break-section {
+    h3, h2 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .page-break-section {
+    h3, h2 {
+      font-size: 1.1em;
+    }
+  }
+}

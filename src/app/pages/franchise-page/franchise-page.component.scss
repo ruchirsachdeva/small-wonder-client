@@ -33,3 +33,53 @@
   background: $button-primary;
   color: $white-primary;
 }
+
+@media only screen and (max-width: 600px) {
+  .franchise-redirects {
+    .block-heading {
+      width: 100%;
+    }
+    .block-text {
+      width: 100%;
+    }
+
+    .col-md-4 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .franchise-redirects {
+    .block-heading{
+      p {
+        font-size: 1.5em;
+      }
+    }
+    .block-text{
+        font-size: 1em;
+    }
+    .btn {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .franchise-redirects {
+    .block-heading{
+      p {
+        font-size: 1.25em;
+      }
+    }
+    .block-text{
+        font-size: 0.8em;
+    }
+    .btn {
+      font-size: 0.8em;
+    }
+  }
+}

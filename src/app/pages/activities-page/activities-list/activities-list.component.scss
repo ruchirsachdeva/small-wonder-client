@@ -103,3 +103,25 @@
     font-size: 1.1em;
   }
 }
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .activities-list-section {
+    .header > h1{
+      font-size: 1.4em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .activities-list-section {
+    .header > h1{
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+}

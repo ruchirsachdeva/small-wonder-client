@@ -4,6 +4,7 @@
   background: #fff;
 }
 
+
 .sw_title {
   margin: 0 auto;
   max-width: 900px;
@@ -118,11 +119,18 @@
 @media only screen and (max-width: 480px) {
   .sw_item {
     p {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 
   .sw_item4 {
     transform: rotate(-2deg) translateY(55px) translateX(20px);
+  }
+
+
+  .sw_title {
+    p {
+      padding: 0 0px;
+    }
   }
 }

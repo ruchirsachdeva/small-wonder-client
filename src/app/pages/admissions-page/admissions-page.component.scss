@@ -32,7 +32,6 @@
   border-radius: 0%;
   .card-body{
     text-align: center;
-    font-size: small;
     font-weight: 700;
   }
 }
@@ -62,4 +61,47 @@ span{
   color: white;
   font-weight: 700;
   border-radius: 0%;
+}
+
+@media only screen and (min-width: 600px)  {
+  .card-body{
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+  .admission-applications{
+    font-size: 0.85em;
+  }
+  .card-body  {
+    font-size: 0.85em;
+    h6 {
+      font-size: 1.1em;
+    }
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  h5 {
+    font-size: 0.85em;
+  }
+
+}
+
+@media only screen and (max-width: 410px) {
+  .admission-applications{
+    font-size: 0.75em;
+  }
+  .card-body {
+    font-size: 0.75em;
+    h6 {
+      font-size: 1em;
+    }
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 0.75em;
+  }
 }

@@ -54,4 +54,47 @@
     margin-top: 10px;
     font-size: 0.9em;
   }
+  .learning-block {
+    padding: 1em 0;
+    .container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .bullet-points {
+    width: 100px;
+    height: 90px;
+    margin-top: 7px;
+    font-size: 0.8em;
+  }
+
+  .learning-block {
+    .col-md-9 {
+      font-size: 1em;
+    }
+    .heading {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .bullet-points {
+    width: 90px;
+    height: 80px;
+    margin-top: 4px;
+    font-size: 0.75em;
+  }
+  .learning-block {
+    .col-md-9 {
+      font-size: 0.8em;
+    }
+
+    .heading {
+      font-size: 1.25em;
+    }
+  }
 }
