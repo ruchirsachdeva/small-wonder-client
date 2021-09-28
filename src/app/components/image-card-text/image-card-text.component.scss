@@ -15,3 +15,26 @@
 .card-body{
     margin-left: 7%;
 }
+
+.card {
+  position: inherit;
+  margin-top: -400px;
+}
+
+@media only screen and (max-width: 530px) {
+  .card-text {
+    font-size: small;
+  }
+  .card-title {
+    font-size: smaller;
+  }
+  .card {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .card-body{
+    padding: 0;
+  }
+}

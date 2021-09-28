@@ -2,35 +2,31 @@
 
 // page specific elements
 
+
 #nav-block {
-  position: absolute;
-  right: 4em;
+  right: 1em;
   top: -5em;
   z-index: 1000;
 }
 
 #nav-up-rectangle {
-  width: 18em;
   height: 15em;
   background: $button-primary;
   box-shadow: 0 10px 30px -10px #000;
 
   ul {
-    display: block;
-    position: relative;
     top: 2em;
     margin: 0;
     padding-left: 0;
 
     li {
-      border-bottom: solid 1px $white-primary;
       padding: 0 1em;
-      list-style-type: none;
       padding: 0.2em 1em;
+
       a {
         color: $white-primary;
-        font-size: 0.9em;
         font-weight: 700;
+
         &:hover {
           color: $white-primary;
           text-decoration: none;
@@ -44,10 +40,85 @@
     }
   }
 }
-#nav-down-triangle {
-  width: 0;
-  height: 0;
-  border-left: 9em solid transparent;
-  border-right: 9em solid transparent;
-  border-top: 3em solid $button-primary;
+
+@media only screen and (min-width: 900px) {
+  #nav-block {
+    position: absolute;
+  }
+  #nav-up-rectangle {
+    width: 18em;
+
+    ul {
+      display: block;
+      position: relative;
+
+      li {
+        border-bottom: solid 1px $white-primary;
+        list-style-type: none;
+
+        a {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  #nav-down-triangle {
+    width: 0;
+    height: 0;
+    border-left: 9em solid transparent;
+    border-right: 9em solid transparent;
+    border-top: 3em solid $button-primary;
+  }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 900px) {
+
+  #nav-up-rectangle {
+    height: 5em;
+    background: $button-primary;
+    box-shadow: 0 10px 30px -10px #000;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+        a {
+          display: block;
+          text-align: center;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  #nav-down-triangle {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 370px) {
+  #nav-up-rectangle {
+    ul {
+      li {
+        a {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 270px) {
+    #nav-up-rectangle {
+      ul {
+        li {
+          a {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+  }
 }
