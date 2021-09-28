@@ -125,9 +125,14 @@
   }
 
   .header-logo {
-    width: 100%;
+    //width: 100%;
     min-width: 100px;
     opacity: 0.8;
+    margin-block-start: -50px;
+  }
+
+  .nright a i {
+    margin-block-start: -50px;
   }
 }
 
@@ -139,5 +144,11 @@
     width: 25px;
     height: 25px;
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header-logo {
+    width: 100%;
   }
 }
