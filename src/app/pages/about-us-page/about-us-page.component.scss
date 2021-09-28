@@ -74,7 +74,7 @@
 @media only screen and (min-width: 370px) and (max-width: 900px) {
 
   #nav-up-rectangle {
-    height: 5em;
+    height: 4em;
     background: $button-primary;
     box-shadow: 0 10px 30px -10px #000;
 
@@ -96,6 +96,12 @@
   }
   #nav-down-triangle {
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #nav-up-rectangle {
+    height: 12em;
   }
 }
 
