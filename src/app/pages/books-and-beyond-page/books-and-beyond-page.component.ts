@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./books-and-beyond-page.component.scss"],
 })
 export class BooksAndBeyondPageComponent implements OnInit {
-  title: string = "Books & Beyond";
+  title: string = "Pedagogy";
   bgImage: string = "/assets/img/school-building.jpg";
   envSectionTitle: string = "Learning Environment";
   contentList = [
@@ -32,37 +32,37 @@ export class BooksAndBeyondPageComponent implements OnInit {
     },
   ];
 
-  introSectionTitle: string = "Learning happens everywhere";
-  introSectionContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, 
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
+  introSectionTitle: string = "Pillars of our Pedagogy";
+  introSectionContent = ``;
 
   introSectionContentList = [
     {
-      heading: "Children Learn while They Play",
-      text: `Besides regular school  curriculum we provide an environment of learning beyond school hsours also where the curriculum   is designed exclusively as per the mental level of children, not related to age and we have mixed age groups to explore the mental , verbal and logical skills in different environment. children have the right to learn and develop individually and in group settings through different play way techniques.`,
+      heading: "Children learn while they play",
+      text: `Children do not play so that they can learn, but rather they learn while they play. There are various forms and levels of play and a professional teacher knows how to foster play with countless possibilities for children to learn. Play can happen through more organized activities or through free play, where the teacher’s role is to guide, document, and participate to enhance learning. More academic areas also benefit from play based learning methods, such as science, maths and linguistic skills.`,
     },
     {
-      heading: "Learning by Exploring",
-      text: `Besides regular curriculum we have following activities which boosts the Wonderians to be the best global citizens by exploring the unknown to bring it to their known world.`,
+      heading: "Learning by exploring",
+      text: `Children also learn through guided experimentation, and this is achieved by doing projects. The term “project-based learning” is part of our educational approach and involves a collaborative effort between children and teachers. The project exploration can be done in a small group, or with the whole class. Teachers draw inspiration from thoughtfully designed materials and will select a suitable project that fits the children’s developmental age, whatever the topic that is currently being explored.`,
     },
+    {
+      heading: "Learning Happens Everywhere",
+      text: `Children are learning every moment of the day, whether it’s putting on your own shoes; pouring yourself a drink or learning about science through a hands-on science project. The teacher’s role is to enhance this situational learning.`,
+    }
   ];
 
-  daySectionTitle: string = "Day at small wonders";
+  // daySectionTitle: string = "Day at Small Wonders";
+  //
+  // daySectionContent: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  // sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+  // consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  // Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  // sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
 
-  daySectionContent: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, 
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
-
-  childrenLearnSectionTitle: string = "What children will learn";
+  childrenLearnSectionTitle: string = "What children will learn at Small wonders";
   childrenLearnSectionContent = [
     {
-      heading: "1. DISCOVERING AND INTERMINGLING WITH THE WORLD",
-      text: `We actively encourage independent thinking and adaptability alongside academic focus and an ever- evolving depth of learning as per the child’s mental level.  We strengthen student’s connection with nature and the surroundings through Science and Social Studies. Also support their activities through linguistic and Mathematical skills.`,
+      heading: "EXPLORING AND INTERACTING WITH THE WORLD",
+      text: `We support the development of children’s linguistic and mathematical skills and strengthen children’s relationship with nature and the environment through science and environmental education.`,
       color: "orange",
       bulletPoints: [
         "Linguistic Skills",
@@ -71,28 +71,24 @@ export class BooksAndBeyondPageComponent implements OnInit {
       ],
     },
     {
-      heading: "2. KNOWING THE WORLD WE LIVE IN",
-      text: `Our different practices activate our kids to respect society and themselves for diversity in nature and society. We support children’s growth as conscious human beings by focusing on building a strong foundation for a healthy way of living which consists of physical activity, nutrition, rest, self-care, and care of others.`,
+      heading: "UNDERSTANDING THE WORLD WE LIVE IN",
+      text: `We support children in understanding the diversity in their local community, as well as the practices that activate respect for diversity. We support children’s growth as conscious human beings and help them to understand what it means to be an ethically responsible member of society.`,
       color: "violet",
       bulletPoints: ["Cultural Competence", "Socio Emotional skills"],
     },
     {
-      heading: "3. KNOWING TO BE EXPRESSIVE THROUGH VARIOUS WAYS",
-      text: `We offer children opportunities to express themselves through musical activities, visual arts/crafts, bodily/verbal expression and thus familiarize students with their Heritage.`,
+      heading: "LEARNING FORMS OF EXPRESSION",
+      text: `We familiarize them with different art forms and their cultural heritage. We offer children opportunities to express themselves through musical activities, visual arts/crafts and bodily/verbal expression.`,
       color: "green",
       bulletPoints: [
-        "Crafts and Visual Expression",
-        "Verbal & Musical Expression",
-        "Physical Expression",
+        "Musical Activities",
+        "Crafts & Visual Expression",
+        "Verbal & Physical Expression",
       ],
     },
     {
-      heading: "Practicing a healthy way of living",
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, 
-      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      heading: "PRACTICING A HEALTHY WAY OF LIVING",
+      text: `We focus on building a strong foundation for a healthy way of living which consists of physical activity, nutrition, rest, self-care and care of others. This learning area supports other learning areas and helps children manage their daily life and routines.`,
       color: "blue",
       bulletPoints: ["Socio-Emotional Competence", "Physical Wellbeing"],
     },

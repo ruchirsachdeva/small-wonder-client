@@ -38,7 +38,7 @@ export class AboutUSComponent implements OnInit {
       },
       {
         imageUrl: "/assets/img/more-explore-3.png",
-        text: "Books & Beyond",
+        text: "Pedagogy",
         link: '/books-and-beyond'
       },
       {

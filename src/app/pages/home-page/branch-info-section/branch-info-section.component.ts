@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from '@angular/router'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-branch-info-section",
@@ -38,9 +38,9 @@ export class BranchInfoSectionComponent implements OnInit {
     },
     {
       imgSrc: "/assets/img/face2.png",
-      title: "Small Wonders Toddlers",
-      address: "",
-      subText: "(Coming Soon)",
+      title: "Small Wonders Ikigai",
+      address: "Yamuna Enclave",
+      subText: "Know More",
       showArrow: "",
     },
   ];

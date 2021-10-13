@@ -6,9 +6,38 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./parents-testimonial.component.scss"],
 })
 export class ParentsTestimonialComponent implements OnInit {
-  @Input() testimonialList = [1, 2, 3, 4];
+  @Input() testimonialList = [
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "Barry Allen",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "Kevin Smith",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "John Doe",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+    {
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      name: "Barry Allen",
+      designation: "Vulputate",
+      imgSrc: "/assets/img/sampleParent.png",
+    },
+  ];
 
-  sample = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sample = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
 
   titleIntro: string = "Our Testimonials";

@@ -10,6 +10,7 @@ export class CarouselInfoCardComponent implements OnInit {
   @Input() title = "";
   @Input() content = "";
   @Input() ageInterval = "";
+  @Input() routePath = "";
 
   constructor() {}
 

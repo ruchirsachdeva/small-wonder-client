@@ -4,7 +4,7 @@
   background: url(/assets/img/footer-background.png) repeat;
   color: $white-primary;
   position: relative;
-  padding-top: 2em;
+  //padding-top: 2em;
   // margin-top: 20%;
 
   input {
@@ -41,7 +41,7 @@
 }
 
 .footerNew-secondary-nav {
-  margin: 3em 0 1em;
+  //margin: 3em 0 1em;
   border-top: 1px dashed $white-primary;
   border-bottom: 1px dashed $white-primary;
 
@@ -263,4 +263,8 @@
     font-size: 13px!important;
   }
 
+}
+
+a {
+  color: white;
 }

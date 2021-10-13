@@ -17,6 +17,8 @@ import { LeadershipComponent } from "./pages/about-us-page/leadership/leadership
 import { ExtrasComponent } from "./pages/about-us-page/extras/extras.component";
 import { ActivitiesListComponent } from "./pages/activities-page/activities-list/activities-list.component";
 import { ActivityDisplayComponent } from "./pages/activities-page/activity-display/activity-display.component";
+import { ContactFormComponent } from "./pages/home-page/contact-form/contact-form.component";
+import { ParentsTestimonialComponent } from "./pages/home-page/parents-testimonial/parents-testimonial.component";
 
 const routes: Routes = [
   { path: "", component: HomePageComponent },
@@ -53,6 +55,8 @@ const routes: Routes = [
   { path: "blog", component: BlogPageComponent },
   { path: "schedule-tour", component: ScheduleTourPageComponent },
   { path: "shoonya", component: ShoonyaPageComponent },
+  { path: "contact-form", component: ContactFormComponent },
+  { path: "parents-testimonial", component: ParentsTestimonialComponent },
 ];
 
 @NgModule({
