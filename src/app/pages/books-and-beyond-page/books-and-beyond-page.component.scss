@@ -14,16 +14,6 @@
   }
 }
 
-.children-learn-section {
-  width: 100%;
-  padding: 3em 0;
-  background: $white-primary;
-
-  h3 {
-    text-transform: uppercase;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .day-section, .children-learn-section{
     padding: 1em 0;

@@ -1,10 +1,10 @@
-@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/variables";
 
 .learning-block {
   width: 100%;
   padding: 2em 0;
   border-bottom: 1px solid $background-light-grey;
-  background: $white-primary;
+  background: $background-primary-light;
 }
 
 .heading {

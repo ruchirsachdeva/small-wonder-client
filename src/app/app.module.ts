@@ -51,7 +51,7 @@ import { LocationExploreComponent } from "./pages/schedule-tour-page/location-ex
 import { AdmissionStepComponent } from "./pages/admissions-page/admission-step/admission-step.component";
 import { LearningEnvSectionComponent } from "./pages/books-and-beyond-page/learning-env-section/learning-env-section.component";
 import { LearningIntroComponent } from "./pages/books-and-beyond-page/learning-intro/learning-intro.component";
-import { LearningBlockComponent } from "./pages/books-and-beyond-page/learning-block/learning-block.component";
+import { LearningBlockComponent } from "./pages/curriculum-page/learning-block/learning-block.component";
 import { OverlayComponent } from './components/overlay/overlay.component';
 import { ImageCardSectionComponent } from "./components/image-card-section/image-card-section.component";
 import { ImageCardTextComponent } from "./components/image-card-text/image-card-text.component";

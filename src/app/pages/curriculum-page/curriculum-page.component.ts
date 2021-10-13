@@ -34,6 +34,42 @@ export class CurriculumPageComponent implements OnInit {
   leftItems3 =['WONDER BOOKS and BEYOND' , 'WONDERNOMICS', 'WONDER EXPLODING DOTS', 'WONDER SHOONYA'];
   leftLinks3 =['books-and-beyond', '#', '#', 'shoonya'];
 
+  childrenLearnSectionTitle: string = "What children will learn at Small wonders";
+  childrenLearnSectionContent = [
+    {
+      heading: "EXPLORING AND INTERACTING WITH THE WORLD",
+      text: `We support the development of children’s linguistic and mathematical skills and strengthen children’s relationship with nature and the environment through science and environmental education.`,
+      color: "orange",
+      bulletPoints: [
+        "Linguistic Skills",
+        "Mathematical Skills",
+        "Science and Social skills",
+      ],
+    },
+    {
+      heading: "UNDERSTANDING THE WORLD WE LIVE IN",
+      text: `We support children in understanding the diversity in their local community, as well as the practices that activate respect for diversity. We support children’s growth as conscious human beings and help them to understand what it means to be an ethically responsible member of society.`,
+      color: "violet",
+      bulletPoints: ["Cultural Competence", "Socio Emotional skills"],
+    },
+    {
+      heading: "LEARNING FORMS OF EXPRESSION",
+      text: `We familiarize them with different art forms and their cultural heritage. We offer children opportunities to express themselves through musical activities, visual arts/crafts and bodily/verbal expression.`,
+      color: "green",
+      bulletPoints: [
+        "Musical Activities",
+        "Crafts & Visual Expression",
+        "Verbal & Physical Expression",
+      ],
+    },
+    {
+      heading: "PRACTICING A HEALTHY WAY OF LIVING",
+      text: `We focus on building a strong foundation for a healthy way of living which consists of physical activity, nutrition, rest, self-care and care of others. This learning area supports other learning areas and helps children manage their daily life and routines.`,
+      color: "blue",
+      bulletPoints: ["Socio-Emotional Competence", "Physical Wellbeing"],
+    },
+  ];
+
   constructor() {}
 
   ngOnInit() {}

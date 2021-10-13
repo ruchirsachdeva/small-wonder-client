@@ -15,3 +15,18 @@
 <!--[listItems]="leftItems3"-->
 <!--[listLinks]="leftLinks3"-->
 <!--&gt;</app-left-aligned-image>-->
+
+<!-- what children will learn -->
+<div class="children-learn-section">
+  <div class="container">
+    <h3 class="text-center">{{ childrenLearnSectionTitle }}</h3>
+    <div *ngFor="let item of childrenLearnSectionContent">
+      <app-learning-block
+        [heading]="item.heading"
+        [text]="item.text"
+        [color]="item.color"
+        [bulletPoints]="item.bulletPoints"
+      ></app-learning-block>
+    </div>
+  </div>
+</div>
