@@ -7,36 +7,33 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ScheduleTourPageComponent implements OnInit {
   title: string = "Schedule a tour";
-  bgImage: string = "/assets/img/school-building.jpg";
+  bgImage: string = "/assets/img/schedule-a-tour.jpg";
   locationExploreTitle: string = "Pick your Location";
 
   locationList = [
     {
-      title: "Lorem Ipsum",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-      addHeader: "Lorem Ipsum",
-      address: "212 Baker Street, London",
-      phone: "+91 2234908989",
-      email: "sample@gmail.com",
+      title: "Small Wonders Kindergarten",
+      content: ``,
+      addHeader: "Model Town",
+      address: "L-301, Model Town, Panipat",
+      phone: "+91 9050417272",
+      email: "smallwonders2002@gmail.com",
     },
     {
-      title: "Lorem Ipsum",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-      addHeader: "Lorem Ipsum",
-      address: "212 Baker Street, London",
-      phone: "+91 2234908989",
-      email: "sample@gmail.com",
+      title: "Small Wonders World School",
+      content: ``,
+      addHeader: "TDI City",
+      address: "B block, TDI City sector 39",
+      phone: "+91 7027401201",
+      email: "smallwonderstdi@gmail.com",
     },
     {
-      title: "Lorem Ipsum",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-      addHeader: "Lorem Ipsum",
-      address: "212 Baker Street, London",
-      phone: "+91 2234908989",
-      email: "sample@gmail.com",
+      title: "Small Wonders Ikigai",
+      content: ``,
+      addHeader: "Yamuna Enclave",
+      address: "Yamuna Enclave",
+      phone: "+91 7027401210",
+      email: "smallwonders2002@gmail.com",
     },
   ];
 

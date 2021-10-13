@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class BooksAndBeyondPageComponent implements OnInit {
   title: string = "Pedagogy";
-  bgImage: string = "/assets/img/school-building.jpg";
+  bgImage: string = "/assets/img/pedagogy.jpg";
   envSectionTitle: string = "Learning Environment";
   contentList = [
     {

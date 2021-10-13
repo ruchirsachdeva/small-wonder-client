@@ -7,16 +7,16 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AdmissionsPageComponent implements OnInit {
   title: string = "Admission";
-  bgImage: string = "/assets/img/school-building.jpg";
-  introText: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  bgImage: string = "/assets/img/admission.jpg";
+  introText: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`;
 
   admissionInfoList = [
     {
       step: 1,
       title: "Initial Application",
-      content: `Enquiry Form: 
+      content: `Enquiry Form:
       To start the admissions procedure, all parents must fill in the enquiry form and submit the same to the school. APPLICATIONS FOR THE SESSION 2021-22 ARE OPEN.`,
       backgroundColor: "pink",
     },

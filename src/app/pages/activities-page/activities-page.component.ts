@@ -6,33 +6,33 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./activities-page.component.scss"],
 })
 export class ActivitiesPageComponent implements OnInit {
-  title: string = "Activities";
-  bgImage: string ="/assets/img/activities_cover.jpg";
+  title: string = "";
+  bgImage: string ="/assets/img/activities.jpg";
 
   testimonialList = [
     {
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
       name: "Barry Allen",
       designation: "Vulputate",
       imgSrc: "/assets/img/sampleParent.png",
     },
     {
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
       name: "Kevin Smith",
       designation: "Vulputate",
       imgSrc: "/assets/img/sampleParent.png",
     },
     {
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
       name: "John Doe",
       designation: "Vulputate",
       imgSrc: "/assets/img/sampleParent.png",
     },
     {
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
       name: "Barry Allen",
       designation: "Vulputate",
