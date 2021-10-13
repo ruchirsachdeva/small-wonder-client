@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AboutUsPageComponent implements OnInit {
   image = "/assets/img/aboutUs.jpg";
-  title="WELCOME TO SMALL WONDERS";
+  title="";
 
   text = `“Welcome to our Wonderian Family, and to our website.”\nThis website has been created to give parents and carers a brief synopsis, ‘flavour’ of the offerings and facilities that are available to our students.`;
 

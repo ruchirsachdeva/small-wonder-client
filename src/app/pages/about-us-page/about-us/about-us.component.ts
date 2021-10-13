@@ -6,10 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./about-us.component.scss"],
 })
 export class AboutUSComponent implements OnInit {
-  text: string = `SMALL WONDERS SCHOOL was conceptualised with the Philosophy that kids enjoy their schooling if given an environment which creates enthusiasm every time.
-   We believe that education is not only a tool to achieve professional milestones, but also a means to make lives better.
-    Small Wonders objective is to raise happy and conscientious personalities who lead the competitive market as well as live a life of fulfilment.`;
-
+  text: string = `At Small Wonders, we seek to provide the most meaningful educational experience our students will have in their lives.
+Childhood is a period of life when everything is possible. It is a time to discover the world and all of the possibilities it holds. We believe that children are active agents in their own lives from a young age, and with age-appropriate considerations, we take their thoughts, ideas and opinions into account as we continuously develop our concepts and train our faculty to adapt and cultivate this approach. Students work collaboratively with classmates and teachers, who engage them in discovery opportunities that keep students interested and engaged in learning.`;
   aboutUsItems = [
     { value: 555, info: "WONDER BEYOND - BOOKS" },
     { value: 544, info: "WONDERSHOONYA" },

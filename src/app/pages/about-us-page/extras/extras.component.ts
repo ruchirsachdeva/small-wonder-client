@@ -8,16 +8,16 @@ import { Component, OnInit } from "@angular/core";
 export class ExtrasComponent implements OnInit {
   imageList = [];
 
-  visionText: string =`To develop and share an inquiry-based approach to education that fosters creativity, promotes academic excellence, nurtures human relationships, and inspires a growing passion for learning.`;
+  visionText: string =`Young children have an immense capability to adapt and acquire learning skills that will benefit them in the future. Our vision is to design a free-flowing, non-restrictive learning environment inspiring young children to independently pursue their passion.`;
 
-  missionText: string =`To be the world’s leading provider of quality education, enriching the lives of millions of children and the communities by making creative, joyful, compassionate learners who use courageous and innovative thinking to build a harmonious and sustainable world. `;
-  
+  missionText: string =`Our mission is to change the way education meets the future; to foster interdisciplinary, integrated thinking and innovative leadership; to engage fully in the global community; and to facilitate lifelong learning.`;
+
   mottoText: string =`We offer a safe, nurturing and stimulating environment in which this culture of “Connect, Create, Conquer” can flourish Wonderians to be adventurous as they learn and grow.`;
 
-  text: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  text: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
 
   constructor() {}
@@ -26,19 +26,23 @@ export class ExtrasComponent implements OnInit {
     this.imageList = [
       {
         imageUrl: "/assets/img/more-explore-1.png",
-        text: "Lorem Ipsum",
+        text: "Curriculum",
+        link: '/curriculum'
       },
       {
         imageUrl: "/assets/img/more-explore-2.png",
-        text: "Lorem Ipsum",
+        text: "Activities",
+        link: '/activities/all-activities'
       },
       {
         imageUrl: "/assets/img/more-explore-3.png",
-        text: "Lorem Ipsum",
+        text: "Pedagogy",
+        link: '/books-and-beyond'
       },
       {
         imageUrl: "/assets/img/more-explore-1.png",
-        text: "Lorem Ipsum",
+        text: "Events & Gallery",
+        link: '/events-and-gallery'
       },
     ];
   }
