@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./activity-display.component.scss'],
 })
 export class ActivityDisplayComponent implements OnInit {
-  activityName = '';
+  @Input() activityName = '';
 
   activityImageList = [
     '/assets/img/kids_race.jpg',
@@ -56,7 +56,9 @@ export class ActivityDisplayComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
-      this.activityName = params.get('name');
+      if (params.has('name')) {
+        this.activityName = params.get('name');
+      }
 
       this.activityImageList = this.activityMap.get(this.activityName).map(
         name => '/assets/img/activities/' + this.activityName + '/' + name + '.jpg'

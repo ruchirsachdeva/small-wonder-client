@@ -1,5 +1,6 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, ViewChild} from "@angular/core";
 import {Router} from "@angular/router";
+import {OverlayComponent} from "../../../components/overlay/overlay.component";
 
 @Component({
   selector: "app-activities-list",
@@ -7,8 +8,10 @@ import {Router} from "@angular/router";
   styleUrls: ["./activities-list.component.scss"],
 })
 export class ActivitiesListComponent implements OnInit {
-  sampleText: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `;
+
+  imageListInCarousel = [];
+  @ViewChild(OverlayComponent, {static: false})
+  imageModalRef: OverlayComponent;
 
   sportsText: string = `Children and sports are a natural combination. Being part of a sports team is critical to the growth and development of every child. As sportspersons, children develop key character traits including commitment, responsibility, honor, perseverance, cooperation, leadership and sportsmanship.
   Every student deserves to benefit from being part of a team.Students who have the drive, desire and commitment to play a sport have the opportunity to do so, regardless of physical attributes, skill level or ability.`;
@@ -24,6 +27,33 @@ The school curriculum encompasses dance, drama, Indian and Western music and vis
   clubsText: string = `Integration of academics and activities is the key element in the holistic development and grooming of the child. To encourage the students to widen their horizons and experience the skills that are beyond the classroom learning, the school is offering Co-scholastic skills for the students of Classes I-V to inculcate team spirit and creativity during school hours, through ACtivity clubs such as Gardening, Personality development, Magic story world, Fitness Freak, Cookery and Makeup, Creative Writing and Science Experiments.`;
   stageExposureText: string = `Having exposure to stage activities is a child’s way of symbolically expressing and resolving internal conflict, youngsters fabricate their creativity, certainty, confidence and innovative articulation. Stage Exposure helps develop children in various areas such as: Confidence, Expanded Perception, Creative Problem Solving, Development of the right brain , Team work`;
 
+  curriculumImageList = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9
+  ];
+  coCurricularImageList = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+  ];
+  stageExposureImageList = [
+    1, 2, 3, 4, 5
+  ];
+  discoveryImageList = [
+    1, 2, 3, 4, 5
+  ];
+  sportsImageList = [
+    1, 2, 3, 4, 5, 6, 7
+  ];
+  clubsImageList = [
+    1, 2, 3, 4, 5, 6
+  ];
+  activityMap = new Map([
+    ['curriculum', this.curriculumImageList],
+    ['co-curricular', this.coCurricularImageList],
+    ['stage-exposure', this.stageExposureImageList],
+    ['discovery', this.discoveryImageList],
+    ['sports', this.sportsImageList],
+    ['clubs', this.clubsImageList]
+  ]);
+
 
   constructor(private router: Router) {
   }
@@ -32,6 +62,14 @@ The school curriculum encompasses dance, drama, Indian and Western music and vis
   }
 
   navigateTo(activityName) {
-    this.router.navigate(["/activities/activity", activityName]);
+    this.imageListInCarousel = [];
+    if (!this.activityMap.has(activityName)) {
+      return;
+    }
+
+    this.imageListInCarousel = this.activityMap.get(activityName).map(
+      name => '/assets/img/activities/' + activityName + '/' + name + '.jpg'
+    );
+    this.imageModalRef.showModal();
   }
 }
