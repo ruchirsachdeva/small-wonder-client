@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import {Router} from "@angular/router";
 
 @Component({
   selector: "app-more-to-explore",
@@ -8,7 +9,11 @@ import { Component, OnInit, Input } from "@angular/core";
 export class MoreToExploreComponent implements OnInit {
   @Input() imageList = [];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  goToImageLink(link: string) {
+    this.router.navigateByUrl(link);
+  }
 }
