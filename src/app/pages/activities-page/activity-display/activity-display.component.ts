@@ -1,13 +1,26 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {ActivatedRoute, ParamMap} from '@angular/router';
+import {OverlayComponent} from "../../../components/overlay/overlay.component";
 
 @Component({
   selector: 'app-activity-display',
   templateUrl: './activity-display.component.html',
   styleUrls: ['./activity-display.component.scss'],
 })
-export class ActivityDisplayComponent implements OnInit {
-  @Input() activityName = '';
+export class ActivityDisplayComponent implements OnInit, OnChanges {
+  // https://stackoverflow.com/a/44686085
+  // How to detect when an input value changes in angular component
+  @Input() activityName: string;
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.updateImagesForActivity(changes.activityName.currentValue);
+  }
+
+  imageListInCarousel = [
+    '/assets/img/kids_race.jpg',
+    '/assets/img/kids_yoga.jpg',];
+  @ViewChild(OverlayComponent, {static: false})
+  imageModalRef: OverlayComponent;
 
   activityImageList = [
     '/assets/img/kids_race.jpg',
@@ -56,14 +69,20 @@ export class ActivityDisplayComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
+      let activityName = this.activityName;
       if (params.has('name')) {
-        this.activityName = params.get('name');
+        activityName = params.get('name');
       }
-
-      this.activityImageList = this.activityMap.get(this.activityName).map(
-        name => '/assets/img/activities/' + this.activityName + '/' + name + '.jpg'
-      );
+      this.updateImagesForActivity(activityName);
     });
+  }
+
+  private updateImagesForActivity(activityName: string) {
+    const imageList = this.activityMap.get(activityName).map(
+      name => '/assets/img/activities/' + activityName + '/' + name + '.jpg'
+    );
+    this.activityImageList = imageList;
+    this.imageListInCarousel = imageList;
   }
 
   slickInit(e) {

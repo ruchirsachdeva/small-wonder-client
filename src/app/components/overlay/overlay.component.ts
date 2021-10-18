@@ -10,6 +10,7 @@ declare var $: any;
 })
 export class OverlayComponent implements OnInit {
   @Input() show: boolean = false;
+  title: any;
 
   constructor() {}
 

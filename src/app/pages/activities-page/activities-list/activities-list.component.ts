@@ -9,7 +9,6 @@ import {OverlayComponent} from "../../../components/overlay/overlay.component";
 })
 export class ActivitiesListComponent implements OnInit {
 
-  imageListInCarousel = [];
   @ViewChild(OverlayComponent, {static: false})
   imageModalRef: OverlayComponent;
 
@@ -26,34 +25,10 @@ The school curriculum encompasses dance, drama, Indian and Western music and vis
   curriculumText: string = `Curriculum is based on various Key concepts which empower the child to explore the concept of KNOWING MYSELF to LEARNING ABOUT OTHERS and going through various stages to reach to SELF EXPLORATION. Its marvellously designed to cater to satiate the curiosity of child. Dynamic learning goals align and animate our curriculum`;
   clubsText: string = `Integration of academics and activities is the key element in the holistic development and grooming of the child. To encourage the students to widen their horizons and experience the skills that are beyond the classroom learning, the school is offering Co-scholastic skills for the students of Classes I-V to inculcate team spirit and creativity during school hours, through ACtivity clubs such as Gardening, Personality development, Magic story world, Fitness Freak, Cookery and Makeup, Creative Writing and Science Experiments.`;
   stageExposureText: string = `Having exposure to stage activities is a child’s way of symbolically expressing and resolving internal conflict, youngsters fabricate their creativity, certainty, confidence and innovative articulation. Stage Exposure helps develop children in various areas such as: Confidence, Expanded Perception, Creative Problem Solving, Development of the right brain , Team work`;
+  selectedActivityName: string = 'curriculum';
 
-  curriculumImageList = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9
-  ];
-  coCurricularImageList = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-  ];
-  stageExposureImageList = [
-    1, 2, 3, 4, 5
-  ];
-  discoveryImageList = [
-    1, 2, 3, 4, 5
-  ];
-  sportsImageList = [
-    1, 2, 3, 4, 5, 6, 7
-  ];
-  clubsImageList = [
-    1, 2, 3, 4, 5, 6
-  ];
-  activityMap = new Map([
-    ['curriculum', this.curriculumImageList],
-    ['co-curricular', this.coCurricularImageList],
-    ['stage-exposure', this.stageExposureImageList],
-    ['discovery', this.discoveryImageList],
-    ['sports', this.sportsImageList],
-    ['clubs', this.clubsImageList]
-  ]);
 
+  @ViewChild('myTestComp', { static: false })activitiesListComponent: ActivitiesListComponent;
 
   constructor(private router: Router) {
   }
@@ -62,14 +37,9 @@ The school curriculum encompasses dance, drama, Indian and Western music and vis
   }
 
   navigateTo(activityName) {
-    this.imageListInCarousel = [];
-    if (!this.activityMap.has(activityName)) {
-      return;
-    }
+    this.selectedActivityName = activityName;
 
-    this.imageListInCarousel = this.activityMap.get(activityName).map(
-      name => '/assets/img/activities/' + activityName + '/' + name + '.jpg'
-    );
+    this.imageModalRef.title = activityName;
     this.imageModalRef.showModal();
   }
 }
