@@ -10,9 +10,7 @@ export class HeaderComponent implements OnInit {
   contactButtonText: string = "Call Us Today! (+91 7027401201)";
   constructor(public router: Router) {}
 
-  ngOnInit() {
-    // debugger;
-  }
+  ngOnInit() {}
 
   navigateToHome() {
     this.router.navigate(["/"]);
