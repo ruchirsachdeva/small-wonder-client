@@ -1,154 +1,29 @@
-.top-nav {
-  border-bottom: 2px dashed #ddd;
-  min-width: 100%;
-
-  ul {
-    li {
-      a {
-        padding: 12px 20px !important;
-        font-family: Nunito, sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        color: #666;
-        text-decoration: none;
-      }
-    }
-  }
+.header-logo img{
+  width: 108px;
 }
 
-.active-link {
-  color: #8a2b3d !important;
+.nav-item a, .nav-item button{
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.bottom-nav {
-  padding-right: 0px;
-  padding-left:  0px;
-}
-
-.nleft {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .envelope,
-  .phone {
-    height: 35px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .envelope {
-    margin-right: 10px;
-    width: 35px;
-    background: #8a2b3d;
-    border-radius: 100%;
-  }
-
-  .phone {
-    padding: 2px 15px;
-    background: #666;
-    border-radius: 20px;
-  }
-}
-
-.nright {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 0 0 10px;
-
-    i {
-      padding: 0;
-      width: 35px;
-      height: 35px;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .fa-facebook-official {
-      background: #3c58a1;
-      color: #fff;
-    }
-
-    .fa-instagram {
-      color: #fff;
-      background: linear-gradient(
-        45deg,
-        #f09433,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888
-      );
-    }
-    .fa-youtube {
-      background: #fe1f1f;
-      color: #fff;
-    }
-  }
-}
-
-.logo-wrapper {
-  height: 10px;
-}
-.header-logo {
-  width: 160px;
-  height: auto;
-  background: #fff;
-  z-index: 1000;
-  padding: 2%;
-  border-radius: 10px;
-  position: relative;
-}
-
-@media only screen and (max-width: 992px) {
-  .top-nav {
-    border-bottom: none;
-  }
-
-  .nleft {
-    display: none;
-  }
-
-  .header-logo {
-    //width: 100%;
-    min-width: 100px;
-    opacity: 0.8;
-    margin-block-start: -50px;
-  }
-
-  .nright a i {
-    margin-block-start: -50px;
-  }
+.nav-item button {
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar-toggler {
-    font-size: 16px;
-  }
-  .nright a i {
-    width: 25px;
-    height: 25px;
-    font-size: 16px;
-  }
+  // .navbar-toggler {
+  //   font-size: 16px;
+  // }
+  // .nright a i {
+  //   width: 25px;
+  //   height: 25px;
+  //   font-size: 16px;
+  // }
 }
 
 @media only screen and (max-width: 350px) {
-  .header-logo {
-    width: 100%;
-  }
+  // .header-logo {
+  //   width: 100%;
+  // }
 }

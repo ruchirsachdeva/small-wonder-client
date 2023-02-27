@@ -1,0 +1,27 @@
+.jumbo-tran-animation {
+
+    background-image: url(../assets/img/homepage/blue-bg-boy.svg), url("../assets/img/homepage/gold-bg-boy.svg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+
+    animation: changeBg 5s infinite;
+}
+
+@keyframes changeBg {
+
+    0% {
+        background-image: url("../assets/img/homepage/gold-bg-boy.svg"), url(../assets/img/homepage/blue-bg-boy.svg);
+    }
+
+    25% {
+        background-image: url("../assets/img/homepage/gold-bg-boy.svg"), url(../assets/img/homepage/blue-bg-boy.svg);
+    }
+
+    50% {
+        background-image: url(../assets/img/homepage/blue-bg-boy.svg), url("../assets/img/homepage/gold-bg-boy.svg");
+    }
+
+    75%,100% {
+        background-image: url(../assets/img/homepage/blue-bg-boy.svg), url("../assets/img/homepage/gold-bg-boy.svg");
+    }
+}

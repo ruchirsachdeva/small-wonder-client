@@ -2,7 +2,18 @@
 
 body {
   margin: 0;
- // font-family: "Nunito", sans-serif;
+  // font-family: "Nunito", sans-serif;
+  background-color: #FDF8F2 !important;
+  font-family: 'Poppins' !important;
+
+  .btn,
+  .btn:hover,
+  .btn:active,
+  .btn:focus-visible {
+    border-radius: 60px !important;
+    background-color: $btn-primary !important;
+    border-color: $btn-primary !important;
+  }
 }
 
 .pointer-icon {
