@@ -5,6 +5,7 @@ body {
   // font-family: "Nunito", sans-serif;
   background-color: #FDF8F2 !important;
   font-family: 'Poppins' !important;
+  font-weight: 100 !important;
 
   .btn,
   .btn:hover,
@@ -189,6 +190,10 @@ hr.style-dotted-footer {
 
 .desktop-wrapper {
   display: block;
+}
+
+.active-link {
+  color: $active-text-color !important;
 }
 
 @media only screen and (max-width: 480px) {

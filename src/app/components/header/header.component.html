@@ -1,58 +1,104 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand header-logo" [routerLink]="['/']">
         <img src="../../../assets/img/logo.png">
       </a>
-      <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+
+      <!-- Responsive -->
+      <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarSupportedContent">
-        <hr class="hr text-white" />
-        
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a [routerLink]="['/']" [ngClass]="{'active-link': router.url == '/'}" class="nav-link mx-3"
-              aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/about-us']" [ngClass]="{'active-link': router.url === '/about-us'}" class="nav-link mx-3"
-              aria-current="page">About Us</a>
-          </li>
-        
-          <li class="nav-item">
-            <a [routerLink]="['/curriculum']" [ngClass]="{'active-link': router.url == '/curriculum'}" class="nav-link mx-3"
-              aria-current="page">Curriculum</a>
-          </li>
-        
-          <li class="nav-item">
-            <a [routerLink]="['/admissions']" [ngClass]="{'active-link': router.url == '/admissions'}" class="nav-link mx-3"
-              aria-current="page">Admissions</a>
-          </li>
-        
-          <li class="nav-item">
-            <a [routerLink]="['/schedule-tour']" [ngClass]="{'active-link': router.url == '/schedule-tour'}"
-              class="nav-link mx-3" aria-current="page">Schedule a Tour</a>
-          </li>
-        
-          <li class="nav-item">
-            <a [routerLink]="['/activities']" [ngClass]="{'active-link': router.url == '/activities'}" class="nav-link mx-3"
-              aria-current="page">Activities</a>
-          </li>
-        
-          <li class="nav-item">
-            <a [routerLink]="['/books-and-beyond']" [ngClass]="{'active-link': router.url == '/books-and-beyond'}"
-              class="nav-link mx-3" aria-current="page">Pedagogy</a>
-          </li>
-        
-          <li class="nav-item mx-3">
-            <button type="button" class="btn btn-primary btn-rounded px-4 py-2" (click)="navigateToContact()">Contact us</button>
-          </li>
-        </ul>
-
+      <div class="collapse navbar-collapse navbar-collapse-custom text-left text-lg-center" id="navbarSupportedContent">
+        <div class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="close-me" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/icons/icon-close.svg" alt="">
+          </span>
+          <ul class="navbar-nav ms-auto mt-4 mb-lg-0 ">
+            <li class="nav-item">
+              <a [routerLink]="['/']" [ngClass]="{'active-link': router.url == '/'}" class="nav-link mx-lg-3"
+                aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/about-us']" [ngClass]="{'active-link': router.url === '/about-us/info'}"
+                class="nav-link mx-lg-3" aria-current="page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/curriculum']" [ngClass]="{'active-link': router.url == '/curriculum'}"
+                class="nav-link mx-lg-3" aria-current="page">Curriculum</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/admissions']" [ngClass]="{'active-link': router.url == '/admissions'}"
+                class="nav-link mx-lg-3" aria-current="page">Admissions</a>
+            </li>
+      
+            <li class="nav-item">
+              <a [routerLink]="['/schedule-tour']" [ngClass]="{'active-link': router.url == '/schedule-tour'}"
+                class="nav-link mx-lg-3" aria-current="page">Schedule a Tour</a>
+            </li>
+      
+            <li class="nav-item">
+              <a [routerLink]="['/activities']" [ngClass]="{'active-link': router.url == '/activities/all-activities'}"
+                class="nav-link mx-lg-3" aria-current="page">Activities</a>
+            </li>
+      
+            <li class="nav-item">
+              <a [routerLink]="['/books-and-beyond']" [ngClass]="{'active-link': router.url == '/books-and-beyond'}"
+                class="nav-link mx-lg-3" aria-current="page">Pedagogy</a>
+            </li>
+      
+            <li class="nav-item mx-lg-3">
+              <button type="button" class="btn btn-primary btn-rounded px-lg-4 py-lg-2 contact-us"
+                (click)="navigateToContact()"
+                [ngClass]="{'active-link': router.url == '/contact-form', 'in-active-link': router.url !== '/contact-form'}">Contact
+                us</button>
+            </li>
+          </ul>
+        </div>
       </div>
+      <!-- Ends Responsive -->
+
+      <ul class="navbar-nav nav-bar-lg ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a [routerLink]="['/']" [ngClass]="{'active-link': router.url == '/'}" class="nav-link mx-lg-3"
+            aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/about-us']" [ngClass]="{'active-link': router.url === '/about-us/info'}"
+            class="nav-link mx-lg-3" aria-current="page">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/curriculum']" [ngClass]="{'active-link': router.url == '/curriculum'}"
+            class="nav-link mx-lg-3" aria-current="page">Curriculum</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/admissions']" [ngClass]="{'active-link': router.url == '/admissions'}"
+            class="nav-link mx-lg-3" aria-current="page">Admissions</a>
+        </li>
+
+        <li class="nav-item">
+          <a [routerLink]="['/schedule-tour']" [ngClass]="{'active-link': router.url == '/schedule-tour'}"
+            class="nav-link mx-lg-3" aria-current="page">Schedule a Tour</a>
+        </li>
+
+        <li class="nav-item">
+          <a [routerLink]="['/activities']" [ngClass]="{'active-link': router.url == '/activities/all-activities'}"
+            class="nav-link mx-lg-3" aria-current="page">Activities</a>
+        </li>
+
+        <li class="nav-item">
+          <a [routerLink]="['/books-and-beyond']" [ngClass]="{'active-link': router.url == '/books-and-beyond'}"
+            class="nav-link mx-lg-3" aria-current="page">Pedagogy</a>
+        </li>
+
+        <li class="nav-item mx-lg-3">
+          <button type="button" class="btn btn-primary btn-rounded px-lg-4 py-lg-2 contact-us"
+            (click)="navigateToContact()">Contact us</button>
+        </li>
+      </ul>
     </div>
   </nav>
 </div>

@@ -62,6 +62,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +121,8 @@ import { EmbedVideo } from 'ngx-embed-video';
     ExploreSectionComponent,
     AdmissionInputFormComponent,
     VideoComponent,
-    SafePipe
+    SafePipe,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule,
