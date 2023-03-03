@@ -18,39 +18,39 @@
             <img src="assets/icons/icon-close.svg" alt="">
           </span>
           <ul class="navbar-nav ms-auto mt-4 mb-lg-0 ">
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/']" [ngClass]="{'active-link': router.url == '/'}" class="nav-link mx-lg-3"
                 aria-current="page">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/about-us']" [ngClass]="{'active-link': router.url === '/about-us/info'}"
                 class="nav-link mx-lg-3" aria-current="page">About Us</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/curriculum']" [ngClass]="{'active-link': router.url == '/curriculum'}"
                 class="nav-link mx-lg-3" aria-current="page">Curriculum</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/admissions']" [ngClass]="{'active-link': router.url == '/admissions'}"
                 class="nav-link mx-lg-3" aria-current="page">Admissions</a>
             </li>
       
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/schedule-tour']" [ngClass]="{'active-link': router.url == '/schedule-tour'}"
                 class="nav-link mx-lg-3" aria-current="page">Schedule a Tour</a>
             </li>
       
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/activities']" [ngClass]="{'active-link': router.url == '/activities/all-activities'}"
                 class="nav-link mx-lg-3" aria-current="page">Activities</a>
             </li>
       
-            <li class="nav-item">
+            <li class="nav-item py-2">
               <a [routerLink]="['/books-and-beyond']" [ngClass]="{'active-link': router.url == '/books-and-beyond'}"
                 class="nav-link mx-lg-3" aria-current="page">Pedagogy</a>
             </li>
       
-            <li class="nav-item mx-lg-3">
+            <li class="nav-item py-2 mx-lg-3">
               <button type="button" class="btn btn-primary btn-rounded px-lg-4 py-lg-2 contact-us"
                 (click)="navigateToContact()"
                 [ngClass]="{'active-link': router.url == '/contact-form', 'in-active-link': router.url !== '/contact-form'}">Contact
@@ -95,7 +95,7 @@
         </li>
 
         <li class="nav-item mx-lg-3">
-          <button type="button" class="btn btn-primary btn-rounded px-lg-4 py-lg-2 contact-us"
+          <button type="button" class="shadow-lg btn btn-primary btn-rounded px-lg-4 py-lg-2 contact-us"
             (click)="navigateToContact()">Contact us</button>
         </li>
       </ul>

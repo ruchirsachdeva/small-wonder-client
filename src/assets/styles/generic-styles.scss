@@ -196,6 +196,10 @@ hr.style-dotted-footer {
   color: $active-text-color !important;
 }
 
+.primary-color{
+  color: $btn-primary;
+}
+
 @media only screen and (max-width: 480px) {
   .desktop-wrapper {
     display: none;

@@ -2,9 +2,30 @@
 
     background-image: url(../../../assets/img/homepage/blue-bg-boy.svg), url(../../../assets/img/homepage/gold-bg-boy.svg);
     background-repeat: no-repeat;
-    background-position: center, center;
+    background-position: bottom, center;
 
     // animation: changeBg 5s infinite;
+}
+
+.jumbo-tron-header {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.jumbo-tron-text {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #0A033C;
+}
+
+@media only screen and (max-width: 480px) {
+    .jumbo-tron-text {
+        font-size: 38px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #0A033C;
+    }
 }
 
 @keyframes changeBg {
