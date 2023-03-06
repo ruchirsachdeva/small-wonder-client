@@ -1,48 +1,55 @@
-<div class="home-intro-section">
+<!-- Jumbo-tron starts-->
+<div class="jumbo-tron d-flex align-items-center my-lg-5 my-2 py-lg-5">
   <div class="container">
-    <div class="sw_title">
-      <h3>
-        Small Wonders is a Place where children find their true purpose
-<!--        <span>Find their true purpose</span>-->
-      </h3>
-      <p>
-        We are committed to providing rich experiences to promote cognitive, social, and emotional development and
-        ensure students have a solid foundation needed for lifelong learning. With a student-centered approach, students
-        are active participants in their own learning.
-      </p>
-    </div>
-    <div class="container">
-      <div class="sw_items">
-        <div class="sw_item sw_item1">
-          <a href="/about-us/history"
-            ><figure><img src="/assets/img/home-intro-img-1.png" /></figure>
-            <p>
-              Our<br />
-              History
-            </p></a
-          >
+    <div class="row">
+      <div class="col-lg-5 mb-10 mt-5 mt-lg-0 intro-banner align-items-center">
+        <ngx-slick-carousel class="slider-for carousel" #slickModal="slick-carousel" [config]="slideConfig_for">
+          <div ngxSlickItem *ngFor="let item of branchList" class="slide banner-slide">
+            <!-- <img [src]="item.imgSrc" class="figure-img img-fluid rounded"> -->
+            <img src="assets/img/history.png" alt="">
+          </div>
+        </ngx-slick-carousel>
+        <div class="intro-banner-img-background">
+          <img src="assets/img/history.png" alt="">
         </div>
-        <div class="sw_item sw_item2">
-          <a href="/#"
-            ><figure><img src="/assets/img/home-intro-img-2.png" /></figure>
-            <p>
-              Our<br />
-              Philosophy
-            </p></a
-          >
+
+        <div class="intro-banner-title p-lg-2">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/history.png" alt="">
+            </div>
+            <div class="col-9 d-flex align-items-center text-center ps-lg-4">Our History</div>
+          </div>
         </div>
-        <div class="sw_item sw_item3">
-          <a href="/#"
-            ><figure><img src="/assets/img/home-intro-img-3.jpg" /></figure>
-            <p>Meet Our Team</p></a
-          >
+
+      </div>
+      <div class="col-lg-7 d-flex flex-column text-center text-lg-start">
+        <div class="intro-header text-lg-start text-center my-lg-5 pe-lg-5">
+          <span class="primary-color">Small Wonders</span> is a Place where children find their true purpose
         </div>
-        <div class="sw_item sw_item4">
-          <a href="/admissions"
-            ><figure><img src="/assets/img/home-intro-img-4.jpg" /></figure>
-            <p>Admission</p></a>
+
+        <div class="intro-content text-lg-start text-center mb-lg-5 pe-lg-5">
+          We are committed to providing rich experiences to promote cognitive, social, and emotional development and
+          ensure
+          students have a solid foundation needed for lifelong learning. With a student-centered approach, students are
+          active
+          participants in their own learning.
+        </div>
+
+        <div>
+          <ngx-slick-carousel class="slider-nav carousel" #slickModal="slick-carousel" [config]="slideConfig_nav"
+            (afterChange)="afterChange($event)">
+            <div ngxSlickItem *ngFor="let item of branchList" class="slide">
+              <figure class="figure">
+                <img [src]="item.imgSrc" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption font-weight-bold text-center">{{item.title}}</figcaption>
+              </figure>
+            </div>
+          </ngx-slick-carousel>
         </div>
       </div>
+
     </div>
   </div>
 </div>
+<!-- Jumbo-tron ends-->
