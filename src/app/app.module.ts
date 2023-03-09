@@ -64,6 +64,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { RecentEventsComponent } from './components/recent-events/recent-events.component';
 
 @NgModule({
   declarations: [
@@ -124,7 +125,8 @@ import { BannerComponent } from './components/banner/banner.component';
     VideoComponent,
     SafePipe,
     JumbotronComponent,
-    BannerComponent
+    BannerComponent,
+    RecentEventsComponent
   ],
   imports: [
     BrowserModule,
