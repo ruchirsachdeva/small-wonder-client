@@ -37,18 +37,18 @@ export class ParentsTestimonialComponent implements OnInit {
       designation: "Mother of Krishiv",
       imgSrc: "/assets/img/sampleParent.png",
     },
-    {
-      content: `Dear Sanju Ma’am, I really want to thank you for the efforts you are putting in our kids in this kind of situation.  In this Lockdown period, my daughter looks forward to the forthcoming classes so eagerly. This continuity in teaching and your efforts are commendable.  Handling things so seriously and conveniently, taking care of each and every child in such a way is commendable. Hats off to you and all the teachers!!.`,
-      name: "Suchi Katpalia",
-      designation: "Mother of Mantra",
-      imgSrc: "/assets/img/sampleParent.png",
-    },
-    {
-      content: `Both my kids started at Small Wonders and grew as independent young kids. Instilling the sense of independence in its students from a young age by its staff members always impressed me. My kids joined the school as little timid children and have now become more confident socially and in their daily activities. I appreciate all the efforts of Small Wonders for its kids. The moment the kids move out of the gates of Small Wonders, you find in them a very confident personality who can win the world!.`,
-      name: "Minky Narang",
-      designation: "Mother of Kaavya and Dhani",
-      imgSrc: "/assets/img/sampleParent.png",
-    },
+    // {
+    //   content: `Dear Sanju Ma’am, I really want to thank you for the efforts you are putting in our kids in this kind of situation.  In this Lockdown period, my daughter looks forward to the forthcoming classes so eagerly. This continuity in teaching and your efforts are commendable.  Handling things so seriously and conveniently, taking care of each and every child in such a way is commendable. Hats off to you and all the teachers!!.`,
+    //   name: "Suchi Katpalia",
+    //   designation: "Mother of Mantra",
+    //   imgSrc: "/assets/img/sampleParent.png",
+    // },
+    // {
+    //   content: `Both my kids started at Small Wonders and grew as independent young kids. Instilling the sense of independence in its students from a young age by its staff members always impressed me. My kids joined the school as little timid children and have now become more confident socially and in their daily activities. I appreciate all the efforts of Small Wonders for its kids. The moment the kids move out of the gates of Small Wonders, you find in them a very confident personality who can win the world!.`,
+    //   name: "Minky Narang",
+    //   designation: "Mother of Kaavya and Dhani",
+    //   imgSrc: "/assets/img/sampleParent.png",
+    // },
   ];
 
   sample = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -57,24 +57,41 @@ export class ParentsTestimonialComponent implements OnInit {
   titleIntro: string = "Our Testimonials";
   title: string = "What our Happy Parents Say";
 
+  // slideConfig = { "slidesToShow": 4, "slidesToScroll": 1, 'autoplay': true, 'autoplaySpeed': 3500, 'dots': true, 'infinite': true, 'arrows': true 'responsive': [{ 'breakpoint': 1600, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 1, } }, { 'breakpoint': 1000, 'settings': { 'slidesToShow': 2, 'slidesToScroll': 1, } }, { 'breakpoint': 600, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, } }] };
+
   slideConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: "<div class='nav-btn next-slide'></div>",
     prevArrow: "<div class='nav-btn prev-slide'></div>",
-    dots: true,
-    infinite: true,
+    dots: false,
+    // infinite: true,
     centerMode: true,
     responsive: [
-      { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 1000, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-    ],
+      {
+        breakpoint: '1024',
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: '600',
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: '480',
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   slickInit(e) {
     console.log("slick initialized");

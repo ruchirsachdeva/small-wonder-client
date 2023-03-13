@@ -1,15 +1,54 @@
 @import "../../../../assets/styles/variables.scss";
 
-.banner{
-  background-color: black;
-  height: 730px;
-  width: 100%;
+.contact-sec {
+  margin-bottom: 8rem !important;
 }
 
-.contactus-form{
-  background-color: white;
-  height: 400px;
-  width: 600px;
+.banner {
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.contactus-form {
+  position: absolute;
+  bottom: -75px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white !important;
+  height: fit-content;
+  width: 800px;
+  font-size: 14px;
+
+  .form-control,
+  input,
+  textarea,
+  input:active,
+  input:focus,
+  input:focus-visible,
+  input:visited,
+  input:focus-within {
+    border: 0 !important;
+    border-bottom: 1px solid white !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+    background-color: transparent !important;
+    color: white;
+    padding-left: 0;
+
+    label {
+      color: white !important
+    }
+
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
 }
 
 .contact-form-section {
@@ -26,6 +65,7 @@
 }
 
 .bv-no-focus-ring {
+
   textarea,
   input {
     color: $white-primary;
@@ -81,7 +121,22 @@
   .cf_img_2 {
     display: none;
   }
+
+    .contactus-form {
+      width: 90%;
+      bottom: -55px;
+    }
 }
+
 .btn {
   margin: 10px;
+}
+
+.contactus-form .form-control.error,
+.contactus-form input.error,
+.contactus-form textarea.error,
+.form-control.error,
+input.error,
+textarea.error{
+  border-color: red !important;
 }

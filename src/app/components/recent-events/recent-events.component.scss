@@ -1,6 +1,7 @@
-.event-title{
-    font-size: 25px;
+.event-title {
+    // font-size: 25px;
 }
+
 .event-tile {
     position: relative;
 
@@ -9,6 +10,12 @@
         width: 560px;
         border-radius: 25px;
     }
+}
+
+.event-sub-title {
+    font-size: 30px;
+    color: #0A033C;
+    font-weight: bold;
 }
 
 .event-tile::before {
@@ -22,4 +29,17 @@
 
     background: rgb(2, 0, 36);
     background: linear-gradient(360deg, rgba(2, 0, 36, 0.48923319327731096) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.testimonila-intro {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+
+    img {
+        height: auto !important;
+        width: 340px !important;
+        border-radius: 25px;
+    }
 }

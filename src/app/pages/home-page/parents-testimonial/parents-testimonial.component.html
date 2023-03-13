@@ -1,40 +1,52 @@
-<div class="testimonial-section">
+<!-- <div class="testimonial-section">
   <div class="ts_img_1 desktop-wrapper"></div>
-  <div class="ts_img_2"></div>
+  <div class="ts_img_2"></div> -->
+<div class="my-5">
   <div class="container">
-    <div class="title_sec">
+    <!-- <div>
       <p>
         {{ titleIntro }}
       </p>
       <h3>{{ title }}</h3>
-    </div>
+    </div> -->
 
-    <div class="row justify-content-center">
-      <div class="col-lg-10 col-md-10 col-10">
+    <div class="text-center testimonila-intro active-link font-weight-bolder">{{ titleIntro }}</div>
+    <div class="my-3 mb-5 testimonial-title text-center">{{ title }}</div>
+    <div class="justify-content-center">
+      <div class="">
         <!-- slick carousel component -->
-        <ngx-slick-carousel
-          class="carousel"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-          (init)="slickInit($event)"
-        >
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+          (init)="slickInit($event)">
           <div ngxSlickItem *ngFor="let item of testimonialList" class="slide">
-            <div class="testimonial-box">
+            <!-- <div>Slide 1</div> -->
+            <div class="card text-center">
+              <img class="card-img-top card-avatar" [src]="item.imgSrc" alt="Card image cap">
+              <div class="card-body p-3">
+                <div class="card-title">{{item.name}}</div>
+                <img class="stars" src="../../../../assets/img/stars.png">
+                <div>
+                  <img class="card-quote my-2" src="../../../../assets/img/quote.png" alt="Quote">
+                </div>
+                <div class="card-text mx-0">{{item.content}}
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- <div class="testimonial-box">
               <div class="testimonial-box__desc">
                 <p>{{ item.content }}</p>
               </div>
               <div class="testimonial-box__info">
-                <figure>
-<!--                  TODO : Add images later-->
-<!--                  <img [src]="item.imgSrc" />-->
-                </figure>
+                <figure> -->
+            <!--                  TODO : Add images later-->
+            <!--                  <img [src]="item.imgSrc" />-->
+            <!-- </figure>
                 <div>
                   <h4>{{ item.name }}</h4>
                   <p>{{ item.designation }}</p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> -->
         </ngx-slick-carousel>
       </div>
     </div>

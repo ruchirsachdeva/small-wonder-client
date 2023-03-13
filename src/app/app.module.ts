@@ -65,6 +65,8 @@ import { EmbedVideo } from 'ngx-embed-video';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { RecentEventsComponent } from './components/recent-events/recent-events.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -130,6 +132,7 @@ import { RecentEventsComponent } from './components/recent-events/recent-events.
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     NgbModule,
     SlickCarouselModule, HttpClientModule, EmbedVideo.forRoot()
