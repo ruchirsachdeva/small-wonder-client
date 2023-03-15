@@ -1,12 +1,18 @@
 <!-- Jumbo-tron starts-->
-<div class="jumbo-tron d-flex align-items-center my-lg-5 my-2 py-lg-5">
+<div class="jumbo-tron d-flex align-items-center my-2 pb-lg-5">
   <div class="container">
+    <div class="row">
+      <div class="mobile-view px-5">
+        <div class="intro-header-mobile text-center">
+        <span class="primary-color">Small Wonders</span> is a Place where children find their true purpose
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-5 mb-10 mt-5 mt-lg-0 intro-banner align-items-center">
         <ngx-slick-carousel class="slider-for carousel" #slickModal="slick-carousel" [config]="slideConfig_for">
           <div ngxSlickItem *ngFor="let item of branchList" class="slide banner-slide">
             <!-- <img [src]="item.imgSrc" class="figure-img img-fluid rounded"> -->
-            <img src="assets/img/history.png" alt="">
+            <img class="cover-img" src="assets/img/history.png" alt="">
           </div>
         </ngx-slick-carousel>
         <div class="intro-banner-img-background">
@@ -36,7 +42,7 @@
           participants in their own learning.
         </div>
 
-        <div>
+        <div class="my-5 my-lg-0">
           <ngx-slick-carousel class="slider-nav carousel" #slickModal="slick-carousel" [config]="slideConfig_nav"
             (afterChange)="afterChange($event)">
             <div ngxSlickItem *ngFor="let item of branchList" class="slide">

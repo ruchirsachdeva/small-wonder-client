@@ -1,115 +1,344 @@
 @import "../../../../assets/styles/variables.scss";
 
 .branch-info-section {
-  width: 100%;
-  padding: 3em 0;
-  background: $white-primary;
-}
-
-.title_sec {
-  text-align: center;
-  margin: 0 0 2em;
-
-  p {
-    margin: 0;
-    color: $button-primary;
-    font-size: 25px;
-    line-height: 20px;
-    font-family: Shadows Into Light Two, cursive;
+  .sub-header {
+    font-size: 30px;
+    color: #0A033C;
+    font-weight: bold;
   }
-}
 
-.branch-info-card {
-  padding: 7px;
-  min-height: 7em;
-  width: 90%;
-  margin: auto;
-  position: relative;
+  .branch {
+    background-image: url("../../../../assets/img/grey-background.svg");
+    // url("../../../../assets/img/branch-left-bg.svg")
+    // url("../../../../assets/img/branch-right-bg.svg")
+    background-repeat: no-repeat;
+    // no-repeat
+    // no-repeat
+    background-position: center 75px;
+    // left 75px
+    // right 75px
+    background-size: 80%;
 
-  a {
-    text-decoration: none;
-    color: $white-primary;
+    height: 1000px;
+    color: white;
+    position: relative;
 
-    figure {
-      margin-bottom: 0;
+    .left-bg {
+      position: absolute;
+      left: -200px;
+      height: 480px;
+      width: auto;
+      bottom: 65px;
+      z-index: -1;
+    }
+
+    .right-bg {
+      position: absolute;
+      right: -200px;
+      height: 480px;
+      width: auto;
+      bottom: 65px;
+      z-index: -1;
+    }
+
+
+
+    .upper {
+      font-size: 22px;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    .upper::after {
+      position: absolute;
+      content: '';
+      width: 75%;
+      height: 1px;
+      background-color: white;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+
+    .lower {
+      font-size: 15px;
+      padding-top: 1rem;
+    }
+
+    .one {
+      background-color: #10112E;
+      height: 130px;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      position: relative;
+
       img {
-        margin: 0;
-        width: 6em;
-        height: 6em;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        position: absolute;
+        bottom: 130px;
+        right: -50px;
+      }
+    }
+
+    .two {
+      background-color: $btn-primary;
+      height: 130px;
+      position: relative;
+
+      img {
+        filter: grayscale(100%);
+        opacity: 0.8;
+        position: absolute;
+        bottom: 130px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .three {
+      background-color: $active-text-color;
+      height: 130px;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+      position: relative;
+
+      img {
+        filter: grayscale(100%);
+        opacity: 0.8;
+        position: absolute;
+        bottom: 130px;
+        left: -50px;
+      }
+    }
+
+    .one:hover,
+    .two:hover,
+    .three:hover {
+      transform: scale(1.2) translate3d(0%, 2%, 0px);
+      z-index: 1;
+
+      img {
+        filter: unset;
+        opacity: unset;
+        background-image: url("../../../../assets/img/boy-bg-effect.svg");
+        background-repeat: no-repeat;
+        background-position: center 25px;
+        background-size: 100%;
+
+        animation-name: rotating-effect;
+        animation-duration: 0.3s;
       }
     }
   }
-}
 
-.branch-info-card-title {
-  font-weight: 700;
-  margin-bottom: 0.2em;
-  line-height: 1;
-  font-size: 1.2em;
-}
-
-.subText {
-  margin-bottom: 0;
-  font-size: 1em;
-  line-height: 1;
-
-  strong {
-    position: absolute;
-    bottom: 0.25em;
+  .btn {
+    width: 225px !important;
   }
 }
 
-.slide:nth-child(1) .branch-info-card {
-  background: #bdcee9;
+.branch-mobile {
+  display: none;
 }
 
-.slide:nth-child(2) .branch-info-card {
-  background: #9ed9bc;
+@media only screen and (max-width: 480px) {
+  .branch {
+    display: none;
+  }
+
+  .branch-mobile {
+    display: unset !important;
+    color: white;
+
+    .slide {
+      position: relative;
+      margin-top: 35px;
+    }
+
+    .chart-bg {
+      width: 140px !important;
+      height: auto !important;
+
+      margin: 0 auto;
+
+      background-image: url("../../../../assets/img/boy-bg-effect.svg");
+      background-repeat: no-repeat;
+      background-position: center 25px;
+      background-size: 100%;
+    }
+
+    .gery-bg {
+      position: absolute;
+      height: 232px;
+      /* top: 0; */
+      width: auto;
+      z-index: -1;
+      bottom: 90px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #10112E;
+      margin: 0 25px;
+
+      .card-body {
+        position: relative;
+        height: 90px;
+
+        .card-title::after {
+          position: absolute;
+          content: '';
+          width: 75%;
+          height: 1px;
+          background-color: white;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0 auto;
+        }
+
+        .card-title {
+          font-size: 15px;
+          position: relative;
+        }
+      }
+
+      .card-text {
+        font-size: 10px;
+      }
+    }
+  }
+
+
 }
 
-.slide:nth-child(3) .branch-info-card {
-  background: #ffc592;
-}
 
-::ng-deep .nav-btn {
-  height: 41px !important;
-  width: 41px !important;
-}
-::ng-deep .prev-slide.slick-disabled,
-.next-slide.slick-disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-::ng-deep .prev-slide,
-::ng-deep .next-slide {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  transform: translateY(-50%);
-  cursor: pointer;
-  border: none;
-}
+@keyframes rotating-effect {
+  0% {
+    background-size: 0%;
+    // background-position: 50% 22%;
+  }
 
-::ng-deep .prev-slide {
-  background: url(/assets/img/prev-item.png) no-repeat;
-  left: -50px !important;
-}
-::ng-deep .next-slide {
-  background: url(/assets/img/next-item.png) no-repeat;
-  right: -50px !important;
-}
-
-@media only screen and (max-width: 1000px) {
-  .branch-info-card {
-    width: 80%;
-    margin: auto;
+  100% {
+    background-size: 100%;
   }
 }
 
-@media only screen and (max-width: 600px) {
-}
+
+// .branch-info-section {
+//   width: 100%;
+//   padding: 3em 0;
+//   background: $white-primary;
+// }
+
+// .title_sec {
+//   text-align: center;
+//   margin: 0 0 2em;
+
+//   p {
+//     margin: 0;
+//     color: $button-primary;
+//     font-size: 25px;
+//     line-height: 20px;
+//     font-family: Shadows Into Light Two, cursive;
+//   }
+// }
+
+// .branch-info-card {
+//   padding: 7px;
+//   min-height: 7em;
+//   width: 90%;
+//   margin: auto;
+//   position: relative;
+
+//   a {
+//     text-decoration: none;
+//     color: $white-primary;
+
+//     figure {
+//       margin-bottom: 0;
+//       img {
+//         margin: 0;
+//         width: 6em;
+//         height: 6em;
+//       }
+//     }
+//   }
+// }
+
+// .branch-info-card-title {
+//   font-weight: 700;
+//   margin-bottom: 0.2em;
+//   line-height: 1;
+//   font-size: 1.2em;
+// }
+
+// .subText {
+//   margin-bottom: 0;
+//   font-size: 1em;
+//   line-height: 1;
+
+//   strong {
+//     position: absolute;
+//     bottom: 0.25em;
+//   }
+// }
+
+// .slide:nth-child(1) .branch-info-card {
+//   background: #bdcee9;
+// }
+
+// .slide:nth-child(2) .branch-info-card {
+//   background: #9ed9bc;
+// }
+
+// .slide:nth-child(3) .branch-info-card {
+//   background: #ffc592;
+// }
+
+// ::ng-deep .nav-btn {
+//   height: 41px !important;
+//   width: 41px !important;
+// }
+// ::ng-deep .prev-slide.slick-disabled,
+// .next-slide.slick-disabled {
+//   pointer-events: none;
+//   opacity: 0.5;
+// }
+// ::ng-deep .prev-slide,
+// ::ng-deep .next-slide {
+//   font-size: 0;
+//   line-height: 0;
+//   position: absolute;
+//   top: 50%;
+//   display: block;
+//   width: 20px;
+//   height: 20px;
+//   padding: 0;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   border: none;
+// }
+
+// ::ng-deep .prev-slide {
+//   background: url(/assets/img/prev-item.png) no-repeat;
+//   left: -50px !important;
+// }
+// ::ng-deep .next-slide {
+//   background: url(/assets/img/next-item.png) no-repeat;
+//   right: -50px !important;
+// }
+
+// @media only screen and (max-width: 1000px) {
+//   .branch-info-card {
+//     width: 80%;
+//     margin: auto;
+//   }
+// }
+
+// @media only screen and (max-width: 600px) {
+// }

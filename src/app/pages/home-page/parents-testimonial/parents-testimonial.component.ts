@@ -83,7 +83,8 @@ export class ParentsTestimonialComponent implements OnInit {
       {
         breakpoint: '480',
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          centerMode: false
         }
       }
     ]

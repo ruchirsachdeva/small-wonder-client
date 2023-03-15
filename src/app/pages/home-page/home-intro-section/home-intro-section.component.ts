@@ -13,6 +13,7 @@ export class HomeIntroSectionComponent implements OnInit {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    centerMode: true,
     asNavFor: '.slider-nav'
   }
   // });
@@ -22,7 +23,7 @@ export class HomeIntroSectionComponent implements OnInit {
     slidesToScroll: 1,
     // nextArrow: "<div class='nav-btn next-slide'></div>",
     // prevArrow: "<div class='nav-btn prev-slide'></div>",
-    asNavFor: '.slider-for'
+    asNavFor: '.slider-for',
     
     // centerMode: true,
     // focusOnSelect: true

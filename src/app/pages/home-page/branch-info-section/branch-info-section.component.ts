@@ -7,37 +7,45 @@ import { Router } from '@angular/router';
   styleUrls: ["./branch-info-section.component.scss"],
 })
 export class BranchInfoSectionComponent implements OnInit {
+
   slideConfig = {
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: "<div class='nav-btn next-slide'></div>",
-    prevArrow: "<div class='nav-btn prev-slide'></div>",
-    dots: false,
-    infinite: false,
-    responsive: [
-      { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 1000, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-    ],
+    dots: true,
+    centerMode: false
   };
+
+  // slideConfig = {
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   nextArrow: "<div class='nav-btn next-slide'></div>",
+  //   prevArrow: "<div class='nav-btn prev-slide'></div>",
+  //   dots: false,
+  //   infinite: false,
+  //   responsive: [
+  //     { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+  //     { breakpoint: 1000, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+  //     { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+  //   ],
+  // };
 
   branchList = [
     {
-      imgSrc: "/assets/img/face1.png",
+      imgSrc: "../../../../assets/img/two-boy.png",
       title: "Small Wonders Kindergarten",
       address: "L-301, model town, panipat",
       subText: "Know More",
       showArrow: "true",
     },
     {
-      imgSrc: "/assets/img/logo2.png",
+      imgSrc: "../../../../assets/img/two-boy.png",
       title: "Small Wonders World School",
       address: "B block tdi city sector 39, panipat",
       subText: "Know More",
       showArrow: "true",
     },
     {
-      imgSrc: "/assets/img/face2.png",
+      imgSrc: "../../../../assets/img/two-boy.png",
       title: "Small Wonders Ikigai",
       address: "Yamuna Enclave",
       subText: "Know More",

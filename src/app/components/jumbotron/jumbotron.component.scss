@@ -1,10 +1,24 @@
 .jumbo-tran-animation {
 
-    background-image: url(../../../assets/img/homepage/blue-bg-boy.svg), url(../../../assets/img/homepage/gold-bg-boy.svg);
+    background-image: url(../../../assets/img/homepage/blue-bg-boy.svg), url(../../../assets/img/homepage/gold-bg-boy.svg), url(../../../assets/img/left-dots.svg), url(../../../assets/img/right-dots.svg);
     background-repeat: no-repeat;
-    background-position: bottom, center;
+    // background-position: bottom, center;
+    background-position: center 128px,
+        18px 90px,
+        right,
+        30px 65px;
+    position: relative;
 
-    // animation: changeBg 5s infinite;
+    .vector {
+        position: absolute;
+        top: -200px;
+        right: -125px;
+        z-index: -1;
+    }
+}
+
+.jumbotron-boy {
+    margin-bottom: 30px;
 }
 
 .jumbo-tron-header {
@@ -25,6 +39,20 @@
         font-weight: bold;
         line-height: 1.2;
         color: #0A033C;
+    }
+
+    .jumbotron-boy {
+        height: 330px !important;
+    }
+
+    .jumbo-tran-animation {
+            background-position: center 63px, center 45px, right, 50px 40px !important;
+                background-size: 267px, 301px, 75px, 75px !important;
+    }
+
+    .vector{
+        transform: scale(0.5);
+        right: -80px !important;
     }
 }
 

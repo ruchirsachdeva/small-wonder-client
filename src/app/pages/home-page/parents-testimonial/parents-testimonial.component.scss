@@ -136,45 +136,86 @@
   display: initial;
 }
 
-.card-title{
+.card-title {
   font-size: 20px;
 }
+
 .card-text {
   font-size: 15px;
 }
 
+
+
 .slick-slide {
-  .card { 
+  .card {
     background-color: transparent !important;
-    height: 275px !important;
-      width: 275px !important;
+    height: 320px !important;
+    width: 275px !important;
+    position: relative;
+
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+
+    padding-top: 3rem !important;
   }
 }
 
 .slick-current {
   background-color: transparent !important;
+
   .card {
     background-color: white !important;
   }
 }
 
-.card-quote{
+.card-quote {
   display: initial;
   height: 20px;
   width: 20px;
 }
 
-.card-avatar{
+.card-avatar {
   width: 100px;
   position: absolute;
+  top: -50px;
+  z-index: 100000000000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
-.testimonila-intro{
+.testimonila-intro {
   font-weight: 600;
 }
 
-.testimonial-title{
+.testimonial-title {
   font-size: 30px;
   color: #0A033C;
   font-weight: bold;
+}
+
+.testimonials {
+  background-image: url('../../../../assets/img/testimonial background.svg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10px -75px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .testimonials {
+    background-size: contain !important;
+    background-position-y: center !important;
+  }
+
+    .slick-current{
+      .card{
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+          margin-bottom: 50px !important;
+        
+          padding-top: 3rem !important;
+      }
+    }
 }
