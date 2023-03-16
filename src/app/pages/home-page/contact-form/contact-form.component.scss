@@ -140,3 +140,10 @@ input.error,
 textarea.error{
   border-color: red !important;
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .contactus-form {
+    width: 90%;
+  }
+}

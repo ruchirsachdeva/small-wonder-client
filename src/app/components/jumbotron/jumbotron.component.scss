@@ -33,6 +33,24 @@
     color: #0A033C;
 }
 
+@media only screen and (max-width: 1025px) {
+    .jumbo-tron-text {
+        .text {
+            margin: 0 auto !important;
+        }
+    }
+.jumbo-tran-animation{
+                background-position: center 128px,
+                center 90px,
+                525px center,
+                128px 65px;
+
+                .vector{
+                        right: 8px;
+                }
+}
+}
+
 @media only screen and (max-width: 480px) {
     .jumbo-tron-text {
         font-size: 38px;
@@ -46,11 +64,11 @@
     }
 
     .jumbo-tran-animation {
-            background-position: center 63px, center 45px, right, 50px 40px !important;
-                background-size: 267px, 301px, 75px, 75px !important;
+        background-position: center 63px, center 45px, right, 50px 40px !important;
+        background-size: 267px, 301px, 75px, 75px !important;
     }
 
-    .vector{
+    .vector {
         transform: scale(0.5);
         right: -80px !important;
     }

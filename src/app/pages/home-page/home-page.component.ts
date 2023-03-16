@@ -124,12 +124,12 @@ export class HomePageComponent implements OnInit {
       designation: "Mother of Krishiv",
       imgSrc: "/assets/img/sampleParent.png",
     },
-    {
-      content: `Dear Sanju Ma’am, I really want to thank you for the efforts you are putting in our kids in this kind of situation.  In this Lockdown period, my daughter looks forward to the forthcoming classes so eagerly. This continuity in teaching and your efforts are commendable.`,
-      name: "Suchi Katpalia",
-      designation: "Mother of Mantra",
-      imgSrc: "/assets/img/sampleParent.png",
-    },
+    // {
+    //   content: `Dear Sanju Ma’am, I really want to thank you for the efforts you are putting in our kids in this kind of situation.  In this Lockdown period, my daughter looks forward to the forthcoming classes so eagerly. This continuity in teaching and your efforts are commendable.`,
+    //   name: "Suchi Katpalia",
+    //   designation: "Mother of Mantra",
+    //   imgSrc: "/assets/img/sampleParent.png",
+    // },
     {
       content: `Both my kids started at Small Wonders and grew as independent young kids that are now poised to win over the world..`,
       name: "Minky Narang",
