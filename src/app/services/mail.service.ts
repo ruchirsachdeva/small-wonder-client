@@ -19,7 +19,7 @@ export class MailService {
     emailjs.init('user_j1poPFQiQL7NeK76EVAuH');
   }
 
-  send() {
+  send(templateParams) {
     emailjs.send('ruchir-gmail', 'template_y5dkc0b', templateParams)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);

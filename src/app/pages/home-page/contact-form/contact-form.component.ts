@@ -25,8 +25,14 @@ export class ContactFormComponent implements OnInit {
     this.createForm()
   }
 
-  sendEmail() {
-    this.mailService.send();
+  sendEmail(templateParam) {
+    let template = {
+      from_name: templateParam.firstName + ' ' + templateParam.lastName,
+      to_name: 'Enquiry team',
+      message: templateParam.message,
+      reply_to: templateParam.email
+    }
+    this.mailService.send(template);
   }
 
   createForm() {
@@ -45,7 +51,7 @@ export class ContactFormComponent implements OnInit {
     if (this.contactForm.invalid) {
       return;
     }
-    console.log(JSON.stringify(this.contactForm.value, null, 2));
-    debugger;
+    this.sendEmail(this.contactForm.value);
+    // console.log(JSON.stringify(this.contactForm.value, null, 2));
   }
 }
