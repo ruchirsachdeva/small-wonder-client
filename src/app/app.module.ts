@@ -1,3 +1,4 @@
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { SafePipe } from './pipe/safe.pipe';
 import { VideoComponent } from './components/video/video.component';
 import { AdmissionInputFormComponent } from './pages/admissions-page/admission-input-form/admission-input-form.component';
@@ -134,6 +135,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    NgxUsefulSwiperModule,
     NgbModule,
     SlickCarouselModule, HttpClientModule, EmbedVideo.forRoot()
   ],

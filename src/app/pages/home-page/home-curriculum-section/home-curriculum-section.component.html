@@ -11,11 +11,21 @@
               class="fa fa-angle-right"></i></button>
         </div>
       </div>
-      <div class="col-lg-8 order-2 order-sm-2 text-center mb-10 jumbo-tran-animation mt-5 mt-lg-0">
-        Carousel
+      <div class="col-lg-8 order-2 order-sm-2 text-center mb-10 jumbo-tran-animation mb-5 mt-lg-0">
+        <swiper [config]="config">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let item of displayList">
+              <img [src]="item.imgSrc" alt="">
+              <span class="title">{{item.title}}</span>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </swiper>
       </div>
-
-
     </div>
     <!-- <div class="home-curr-section">
   <div class="container">
