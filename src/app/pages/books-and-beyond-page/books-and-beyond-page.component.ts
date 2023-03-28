@@ -68,6 +68,7 @@ export class BooksAndBeyondPageComponent implements OnInit {
         "Linguistic Skills",
         "Mathematical Skills",
         "Science and Social skills",
+        "Animation skills",
       ],
     },
     {

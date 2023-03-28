@@ -41,7 +41,9 @@ export class AdmissionsPageComponent implements OnInit {
       bulletList: [
         "For Pre-Primary School (Toddlers to KG) – There are no entrance exams only interaction with parents.",
         "For Primary School (Grade 1 to 5) – There are no entrance exams only interaction with parents and child. Though, the student's prior knowledge is assessed through a session with the Head of the Department.",
+        "For Primary School (Grade 6 to 8) – The student's prior knowledge is assessed through a session with the Head of the Department.",
         "Meeting with Principal: A brief meeting with the Principal is arranged to confirm the admission and welcome the child and parents to the SWWS family.",
+
       ],
       backgroundColor: "white",
     },
