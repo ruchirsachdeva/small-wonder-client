@@ -58,7 +58,7 @@ export class EventsAndGalleryPageComponent implements OnInit {
         this.eventsList = this.eventsService.eventsList;
         break;
     }
-    // console.log(this.eventsList);
+    console.log(this.eventsList);
   }
 
   openModal(images) {

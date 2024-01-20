@@ -60,8 +60,7 @@ export class BranchInfoSectionComponent implements OnInit {
     console.log("slick initialized");
   }
 
-  goToSchedulePage(){
-    this.router.navigateByUrl('/schedule-tour');
+  navigateToSchedulePage(){
+    this.router.navigate(['/schedule-tour']);
   }
-
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { SwiperOptions } from 'swiper';
+import {Router} from "@angular/router";
 
 @Component({
   selector: "app-home-curriculum-section",
@@ -44,10 +45,15 @@ export class HomeCurriculumSectionComponent implements OnInit {
     ],
   };
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    debugger
+    // debugger
+  }
+
+  navigateToCurriculum() {
+    this.router.navigate(['/curriculum']);
+
   }
 
   slickInit(e) {

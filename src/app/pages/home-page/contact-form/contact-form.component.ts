@@ -26,10 +26,15 @@ export class ContactFormComponent implements OnInit {
   }
 
   sendEmail(templateParam) {
-    let template = {
+    const fullMessage = `Name: ${templateParam.firstName} ${templateParam.lastName}\n`
+      + `Email: ${templateParam.email}\n`
+      + `Phone: ${templateParam.phone}\n\n`
+      + `Message: ${templateParam.message}`;
+
+    const template = {
       from_name: templateParam.firstName + ' ' + templateParam.lastName,
       to_name: 'Enquiry team',
-      message: templateParam.message,
+      message: fullMessage,
       reply_to: templateParam.email
     }
     this.mailService.send(template);

@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router';
-import {OverlayComponent} from "../../../components/overlay/overlay.component";
+import {OverlayComponent} from '../../../components/overlay/overlay.component';
 
 @Component({
   selector: 'app-activity-display',
@@ -11,10 +11,6 @@ export class ActivityDisplayComponent implements OnInit, OnChanges {
   // https://stackoverflow.com/a/44686085
   // How to detect when an input value changes in angular component
   @Input() activityName: string;
-
-  ngOnChanges(changes: SimpleChanges) {
-    this.updateImagesForActivity(changes.activityName.currentValue);
-  }
 
   imageListInCarousel = [
     '/assets/img/kids_race.jpg',
@@ -65,6 +61,9 @@ export class ActivityDisplayComponent implements OnInit, OnChanges {
   };
 
   constructor(private route: ActivatedRoute) {
+  }
+  ngOnChanges(changes: SimpleChanges) {
+    this.updateImagesForActivity(changes.activityName.currentValue);
   }
 
   ngOnInit() {

@@ -62,11 +62,11 @@
           </div>
         </div>
       </ngx-slick-carousel>
-      
+
     </div>
 
     <div class="text-center mb-5">
-      <button type="button" class="shadow-lg btn btn-primary button-rounded px-4 py-3 mt-lg-3">Schedule a Tour <i
+      <button type="button" class="shadow-lg btn btn-primary button-rounded px-4 py-3 mt-lg-3" (click)="navigateToSchedulePage()">Schedule a Tour <i
           class="fa fa-angle-right"></i></button>
     </div>
   </div>
@@ -81,7 +81,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        
+
         <ngx-slick-carousel
           class="carousel"
           #slickModal="slick-carousel"
