@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+\import { Component, OnInit } from '@angular/core';
 import { MailService } from '../../../services/mail.service' ;
 
 
@@ -8,14 +8,20 @@ import { MailService } from '../../../services/mail.service' ;
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
-
+  formData = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    message: ''
+  };
 
   constructor(private  mailService: MailService) { }
 
   ngOnInit() {
   }
 
-  sendEmail() {
+  sendEmail(formData: any) {
     this.mailService.send();
   }
 

@@ -62,6 +62,7 @@ import {EmbedVideo} from "ngx-embed-video/dist";
 import { VideoComponent } from './components/video/video.component';
 import { SafePipe } from './pipe/safe.pipe';
 import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -123,7 +124,7 @@ import {HttpClientModule} from "@angular/common/http";
     VideoComponent,
     SafePipe
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule, HttpClientModule, EmbedVideo.forRoot()],
+    imports: [BrowserModule, AppRoutingModule, NgbModule, SlickCarouselModule, HttpClientModule, EmbedVideo.forRoot(), FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
