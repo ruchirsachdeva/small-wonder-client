@@ -21,8 +21,8 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendEmail(formData: any) {
-    this.mailService.send();
+  sendEmail() {
+    this.mailService.send(this.formData);
   }
 
 }

@@ -18,6 +18,7 @@
                 <div role="group" class="form-group">
                   <div class="bv-no-focus-ring">
                     <input [(ngModel)]="formData.firstName"
+                      name="firstName"
                       placeholder="First Name *"
                       required="required"
                       aria-required="true"
@@ -32,6 +33,7 @@
                   <div class="bv-no-focus-ring">
                     <input
                       [(ngModel)]="formData.lastName"
+                      name="lastName"
                       placeholder="Last Name *"
                       required="required"
                       aria-required="true"
@@ -48,6 +50,7 @@
                   <div class="bv-no-focus-ring">
                     <input
                       [(ngModel)]="formData.email"
+                      name="email"
                       type="email"
                       placeholder="Email Address *"
                       required="required"
@@ -62,6 +65,7 @@
                   <div class="bv-no-focus-ring">
                     <input
                       [(ngModel)]="formData.phoneNumber"
+                      name="phoneNumber"
                       placeholder="Phone Number *"
                       required="required"
                       aria-required="true"
@@ -76,6 +80,7 @@
               <div class="bv-no-focus-ring">
                 <textarea
                   [(ngModel)]="formData.message"
+                  name ="message"
                   placeholder="Write Message"
                   rows="3"
                   wrap="soft"
@@ -84,7 +89,7 @@
                 ></textarea>
               </div>
             </div>
-            <button (click)="sendEmail(this.formData)" class="btn mbtn mt-2">Send Message</button>
+            <button (click)="sendEmail()" class="btn mbtn mt-2">Send Message</button>
           </form>
         </div>
       </div>
