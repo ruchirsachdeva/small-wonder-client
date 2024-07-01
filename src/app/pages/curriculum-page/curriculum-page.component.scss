@@ -1,0 +1,11 @@
+@import "../../../assets/styles/variables.scss";
+
+.children-learn-section {
+  width: 100%;
+  padding: 3em 0;
+  background: $background-primary-light;
+
+  h3 {
+    text-transform: uppercase;
+  }
+}

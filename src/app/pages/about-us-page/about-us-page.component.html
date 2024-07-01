@@ -1,0 +1,19 @@
+<app-background-img-text [bgImage]="image" [title]="title"></app-background-img-text>
+<!--<app-image-card-text [image]="image" [title]="title" [content]="text"></app-image-card-text>-->
+<div class="relative">
+  <div id="nav-block">
+    <div id="nav-up-rectangle">
+      <ul>
+        <li><a [routerLink]="['info']">ABOUT US</a></li>
+        <li><a [routerLink]="['history']">HISTORY OF SMALL WONDERS</a></li>
+        <!--        TODO Add later-->
+        <!--        <li><a [routerLink]="['leadership']">LEADERSHIP</a></li>-->
+        <li><a [routerLink]="['vision']">VISION</a></li>
+        <li><a [routerLink]="['mission']">MISSION</a></li>
+        <li><a target="_blank" href="../../../assets/file.pdf"> Mandatory Disclosure Details</a></li>
+      </ul>
+    </div>
+    <div id="nav-down-triangle"></div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,61 @@
+<div class="home-curr-section">
+  <div class="container">
+    <div class="title_sec">
+      <p>
+        {{ titleIntro }}
+      </p>
+      <h3>{{ title }}</h3>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10" *ngIf="type == 'curriculum'">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+          (breakpoint)="breakpoint($event)"
+          (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of displayList" class="slide">
+            <app-carousel-info-card
+              [imgSrc]="item.imgSrc"
+              [title]="item.title"
+              [content]="item.content"
+              [ageInterval]="item.ageInterval"
+              [routePath]="item.routePath"
+            ></app-carousel-info-card>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+
+      <div class="col-lg-10" *ngIf="type == 'events-and-gallery'">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+          (breakpoint)="breakpoint($event)"
+          (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of displayList" class="slide">
+            <app-carousel-info-card-event
+              [title]="item.title"
+              [content]="item.content"
+              [date]="item.date"
+              [numComments]="item.numComments"
+              [imgSrc]="item.imgSrc"
+            ></app-carousel-info-card-event>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+
+<!--    <div class="text-center mt-4">-->
+<!--      <button class="btn mbtn" routerLink='/{{type}}'>Know More</button>-->
+<!--    </div>-->
+  </div>
+</div>

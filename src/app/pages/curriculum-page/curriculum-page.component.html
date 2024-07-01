@@ -1,0 +1,32 @@
+<app-background-img-text [bgImage]="image" [title]="title"></app-background-img-text>
+
+<app-text-info-block-full [title]="sectionHeading1" [text]="sectionText1"></app-text-info-block-full>
+
+<app-left-aligned-image [imgSrc]="leftImg1" [title]="leftTitle1" [content]="leftContent1"></app-left-aligned-image>
+
+<app-right-aligned-image [imgSrc]="rightImg1" [title]="rightTitle1" [content]="rightContent1"></app-right-aligned-image>
+
+<app-left-aligned-image [imgSrc]="leftImg2" [title]="leftTitle2" [content]="leftContent2"></app-left-aligned-image>
+
+<app-right-aligned-image [imgSrc]="rightImg2" [title]="rightTitle2" [content]="rightContent2"></app-right-aligned-image>
+
+<!--<app-left-aligned-image [imgSrc]="leftImg3" [title]="leftTitle3" [content]="leftContent3"-->
+
+<!--[listItems]="leftItems3"-->
+<!--[listLinks]="leftLinks3"-->
+<!--&gt;</app-left-aligned-image>-->
+
+<!-- what children will learn -->
+<div class="children-learn-section">
+  <div class="container">
+    <h3 class="text-center">{{ childrenLearnSectionTitle }}</h3>
+    <div *ngFor="let item of childrenLearnSectionContent">
+      <app-learning-block
+        [heading]="item.heading"
+        [text]="item.text"
+        [color]="item.color"
+        [bulletPoints]="item.bulletPoints"
+      ></app-learning-block>
+    </div>
+  </div>
+</div>

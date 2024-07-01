@@ -1,0 +1,75 @@
+@import "../../../../assets/styles/variables.scss";
+
+.contact-form-section {
+  width: 100%;
+  padding: 3em 0 0;
+  background: url(/assets/img/footer-background.png) repeat;
+  color: $white-primary;
+  position: relative;
+}
+
+.contact-form-image {
+  width: 70%;
+  height: auto;
+}
+
+.bv-no-focus-ring {
+  textarea,
+  input {
+    color: $white-primary;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    background: 0 0 !important;
+    border: none !important;
+    border-bottom: 2px solid #fff !important;
+
+    &::placeholder {
+      color: $white-primary;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.cf_img_1 {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  background: url("/assets/img/bg-widget-10.png") no-repeat;
+  width: 140px;
+  height: 124px;
+}
+
+.cf_img_2 {
+  position: absolute;
+  right: 4%;
+  top: 8%;
+  background: url("/assets/img/bg-widget-8.png") no-repeat;
+  width: 252px;
+  height: 194px;
+}
+
+.cf_img_3 {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+  background: url("/assets/img/bg-widget-9.png") no-repeat;
+  width: 107px;
+  height: 69px;
+}
+
+@media only screen and (max-width: 720px) {
+  .cf_img_1 {
+    bottom: 25%;
+    top: unset;
+  }
+
+  .cf_img_2 {
+    display: none;
+  }
+}
+.btn {
+  margin: 10px;
+}

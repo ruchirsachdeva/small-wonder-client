@@ -1,0 +1,46 @@
+<div class="location-explore-section">
+  <div class="container">
+    <div class="title_sec">
+      <h3>{{ title }}</h3>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-10">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+        >
+          <div ngxSlickItem *ngFor="let item of locationList" class="slide">
+            <div class="location-explore-box">
+              <h2>{{ item.title }}</h2>
+              <div>
+                <p>{{ item.content }}</p>
+              </div>
+              <div class="location-explore-box__desc">
+                <div class="location-explore-box__desc__header">
+                  <p>{{ item.addHeader }}</p>
+                </div>
+                <p>
+                  <span class="mr-1"><i class="fa fa-map-marker"></i></span
+                  >{{ item.address }}
+                </p>
+                <p>
+                  <span class="mr-1"><i class="fa fa-phone"></i></span
+                  >{{ item.phone }}
+                </p>
+                <p>
+                  <span class="mr-1"><i class="fa"></i></span
+                  >{{ item.email }}
+                </p>
+              </div><br>
+
+               <button class="btn">Schedule a tour</button>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</div>

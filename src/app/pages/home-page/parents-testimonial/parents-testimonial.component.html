@@ -1,0 +1,42 @@
+<div class="testimonial-section">
+  <div class="ts_img_1 desktop-wrapper"></div>
+  <div class="ts_img_2"></div>
+  <div class="container">
+    <div class="title_sec">
+      <p>
+        {{ titleIntro }}
+      </p>
+      <h3>{{ title }}</h3>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-10 col-10">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of testimonialList" class="slide">
+            <div class="testimonial-box">
+              <div class="testimonial-box__desc">
+                <p>{{ item.content }}</p>
+              </div>
+              <div class="testimonial-box__info">
+                <figure>
+<!--                  TODO : Add images later-->
+<!--                  <img [src]="item.imgSrc" />-->
+                </figure>
+                <div>
+                  <h4>{{ item.name }}</h4>
+                  <p>{{ item.designation }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</div>
