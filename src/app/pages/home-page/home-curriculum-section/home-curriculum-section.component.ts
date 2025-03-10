@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: "app-home-curriculum-section",
@@ -11,13 +12,33 @@ export class HomeCurriculumSectionComponent implements OnInit {
   @Input() displayList = [];
   @Input() type = "";
 
+  config: SwiperOptions = {
+    // loop: true,
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 18,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    // pagination: { el: '.swiper-pagination', clickable: true },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev'
+    // },
+    // spaceBetween: 30
+  };
+
   slideConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: "<div class='nav-btn next-slide'></div>",
     prevArrow: "<div class='nav-btn prev-slide'></div>",
+    navigation:true,
     dots: true,
-    infinite: false,
+    autoplay: true,
+    infinite: true,
     responsive: [
       { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
       { breakpoint: 1000, settings: { slidesToShow: 2, slidesToScroll: 1 } },
@@ -27,7 +48,9 @@ export class HomeCurriculumSectionComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    // debuggerimgSrc
+  }
 
   slickInit(e) {
     console.log("slick initialized");

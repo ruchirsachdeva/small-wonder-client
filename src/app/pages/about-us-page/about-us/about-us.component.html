@@ -3,18 +3,8 @@
 <div class="glance-component">
   <div class="rocketImage"></div>
   <div class="container">
-
-
-
     <h3>At a Glance</h3>
-<!--    <div class="row mt-5">-->
-<!--      <div *ngFor="let item of aboutUsItems" class="col-md-3">-->
-<!--        <div class="glance-item">-->
-<!--          <p>{{ item.info }}</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-          <app-video [urls]="aboutUsVideoUrls | safe "></app-video>
+    <app-video [urls]="aboutUsVideoUrls | safe "></app-video>
   </div>
 </div>
 <!--<app-image-card-text [image]="image" [content]="imageCardContent"></app-image-card-text>-->
