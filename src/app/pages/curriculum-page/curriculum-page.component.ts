@@ -22,7 +22,7 @@ export class CurriculumPageComponent implements OnInit {
 
   rightImg1 = "/assets/img/more-explore-3.png";
   rightTitle1: string = "FOCUSING ON THE WHOLE CHILD";
-  rightContent1: string = `Uncovering academic passions, moral compass setting, social skills and leadership development are the work of students in grades 3-8. Small wonders engages this dynamic window of development with academic personalization, mentoring relationships and experiential learning to develop students who are confident to embrace and share their gifts to impact the world.`;
+  rightContent1: string = `Uncovering academic passions, moral compass setting, social skills and leadership development are the work of students in grades 3-5. Small wonders engages this dynamic window of development with academic personalization, mentoring relationships and experiential learning to develop students who are confident to embrace and share their gifts to impact the world.`;
 
   rightImg2 = "/assets/img/more-explore-3.png";
   rightTitle2: string = "SUSTAINING MOMENTUM";
@@ -44,7 +44,6 @@ export class CurriculumPageComponent implements OnInit {
         "Linguistic Skills",
         "Mathematical Skills",
         "Science and Social skills",
-        "Animation skills",
       ],
     },
     {

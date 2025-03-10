@@ -95,46 +95,88 @@ export class HomePageComponent implements OnInit {
 
   testimonialList = [
     {
-      content: `The warm, nurturing and academic environment has exceeded our expectations in developing the whole child, I am so happy my daughter studied in this school in her early years.`,
-      name: "Sangeeta Shah",
-      designation: "Mother of Tanvi",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Small Wonders is where learning feels like a joyful adventure. My kids absolutely love going to school every day!`,
+      name: "Mr. Jindal",
+      designation: "Father of Aaryan",
+      imgSrc: "/assets/img/mmm.png",
     },
     {
-      content: `Small Wonders’ way to inspire its learners and their parents through activities is amazing. My son loves his friends and all the fun learning activities!`,
-      name: "Suman Jaglan",
-      designation: "Mother of Aryan and Abhijay",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `We’ve been a part of the Small Wonders family for over a decade. My elder daughter studied here, and now my son is following in her footsteps. The care and education this school provides are unmatched!`,
+      name: "Mrs. Dua",
+      designation: "Mother of priya",
+      imgSrc: "/assets/img/fff.png",
     },
     {
-      content: `I am thoroughly impressed by the virtual online learning of Small Wonders.   This sudden transition to online learning was quickly streamlined by the amazing staff, hats off..`,
-      name: "Nishant Gupta",
-      designation: "Father of Kanav",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `The foundation that Small Wonders gave my child has been invaluable. Thank you for instilling a love for learning in her!`,
+      name: "Mrs. Rana",
+      designation: "Mother of Asha",
+      imgSrc: "/assets/img/fff.png",
     },
     {
-      content: `My daughter has learned so much from Small Wonders. The minute she started at Small Wonders we felt a lot of changes in her confidence level.`,
-      name: "Rupali gupta",
-      designation: "Mother of Muskaan",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Small Wonders World School has been our partner in raising independent, creative thinkers. We couldn’t be happier with our choice.`,
+      name: "Mrs. Bhatia",
+      designation: "Mother of Raghav",
+      imgSrc: "/assets/img/fff.png",
     },
     {
-      content: `Small Wonders focuses on the individual strengths of its children which I felt when my son grew up in the excellent individualized and warm environment of your school.`,
-      name: "Arti Chhabra",
-      designation: "Mother of Krishiv",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Thank you, Ms. Sanju Chopra and Mr. Arun Chopra, for creating an institution that not only educates but also empowers our children for life`,
+      name: "Mr. joshi",
+      designation: "Father of sumant",
+      imgSrc: "/assets/img/fff.png",
     },
     {
-      content: `Dear Sanju Ma’am, I really want to thank you for the efforts you are putting in our kids in this kind of situation.  In this Lockdown period, my daughter looks forward to the forthcoming classes so eagerly. This continuity in teaching and your efforts are commendable.`,
-      name: "Suchi Katpalia",
-      designation: "Mother of Mantra",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Ms. Sanju Chopra, your passion for holistic education has created a wonderful environment for children to grow and excel`,
+      name: "Mr. Chaudhari",
+      designation: "father of Ananya",
+      imgSrc: "/assets/img/fff.png",
     },
     {
-      content: `Both my kids started at Small Wonders and grew as independent young kids that are now poised to win over the world..`,
-      name: "Minky Narang",
-      designation: "Mother of Kaavya and Dhani",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Small Wonders doesn’t just teach; it inspires. My daughter comes home every day excited about what she’s learned!`,
+      name: "Mrs. Gupta",
+      designation: "Mother of Khushi",
+      imgSrc: "/assets/img/fff.png",
+    },
+    {
+      content: `It’s rare to find a school that has been consistently excellent for over 20 years. Small Wonders is a gem in education.`,
+      name: "Mr. Singh",
+      designation: "Father of Aryan",
+      imgSrc: "/assets/img/fff.png",
+    },
+    {
+      content: `When we first visited Small Wonders, we knew this was the right school for our child. The warm environment and personalized attention make all the difference.`,
+      name: "Mr. Ramesh",
+      designation: "Father of Tanvi",
+      imgSrc: "/assets/img/fff.png",
+    },
+
+    
+
+    {
+      content: `Ms. Sanju Chopra and Mr. Arun Chopra, your tireless efforts and vision have made Small Wonders a beacon of excellence. Thank you for making education a joy for our children.`,
+      name: "Mrs. Mehta",
+      designation: "Mother of Priya",
+      imgSrc: "/assets/img/fff.png",
+    },
+
+    {
+      content: `My child has blossomed in this nurturing environment. The staff at Small Wonders go above and beyond for each child.`,
+      name: "Mrs. D’Souza",
+      designation: "Mother of sahil",
+      imgSrc: "/assets/img/fff.png",
+    },
+
+    {
+      content: `Small Wonders has created a learning environment where children are encouraged to dream big and achieve more. Thank you!.`,
+      name: "Mrs. Kapoor",
+      designation: "Mother of Aarav",
+      imgSrc: "/assets/img/fff.png",
+    },
+
+    {
+      content: `Thank you, Mr. Arun Chopra, for creating a school where learning is fun, innovative, and meaningful.`,
+      name: "Mr. Malhotra",
+      designation: "father of Kartik",
+      imgSrc: "/assets/img/fff.png",
     },
   ];
 
