@@ -8,46 +8,88 @@ import { Component, OnInit, Input } from "@angular/core";
 export class ParentsTestimonialComponent implements OnInit {
   @Input() testimonialList = [
     {
-      content: `The warm, nurturing and academic environment has exceeded our expectations in developing the whole child, I am so happy my daughter studied in this school in her early years.`,
-      name: "Sangeeta Shah",
-      designation: "Mother of Tanvi",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Small Wonders is where learning feels like a joyful adventure. My kids absolutely love going to school every day!`,
+      name: "Mr. Jindal",
+      designation: "Father of Aaryan",
+      imgSrc: "/assets/img/mlogo2.png",
     },
     {
-      content: `Small Wonders’ way to inspire its learners and their parents through activities is amazing. My son loves his friends and all the fun learning activities. I know Small wonders is a safe place for my child, each day becomes a great day as he enters the gateway of his school. I truly appreciate all the members of staff!`,
-      name: "Suman Jaglan",
-      designation: "Mother of Aryan and Abhijay",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `We’ve been a part of the Small Wonders family for over a decade. My elder daughter studied here, and now my son is following in her footsteps. The care and education this school provides are unmatched!`,
+      name: "Mrs. Dua",
+      designation: "Mother of priya",
+      imgSrc: "/assets/img/flogo3.png",
     },
     {
-      content: `I am thoroughly impressed by the virtual online learning of Small Wonders.   This sudden transition to online learning was quickly streamlined by you people. Our children could continue their online education, taking tests and completing projects through online lessons, through your dedicated and committed staff.`,
-      name: "Nishant Gupta",
-      designation: "Father of Kanav",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `The foundation that Small Wonders gave my child has been invaluable. Thank you for instilling a love for learning in her!`,
+      name: "Mrs. Rana",
+      designation: "Mother of Asha",
+      imgSrc: "/assets/img/flogo3.png",
     },
     {
-      content: `My daughter has learned so much from Small Wonders. The minute she started at Small Wonders we felt a lot of changes in her confidence level. Her overall development in the Small Wonders, had opened the gates for her in one of the best Boarding School. Though, even today, she loves her pre- schoolteachers and talks about them, when she is a grown-up child now..`,
-      name: "Rupali gupta",
-      designation: "Mother of Muskaan",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Small Wonders World School has been our partner in raising independent, creative thinkers. We couldn’t be happier with our choice.`,
+      name: "Mrs. Bhatia",
+      designation: "Mother of Raghav",
+      imgSrc: "/assets/img/flogo3.png",
     },
     {
-      content: `Small Wonders focuses on the individual strengths of its children which I felt when my son grew up in the excellent individualized and warm environment of your school.  The connectivity of teachers with the students provides them academic challenges on an individual basis, as well as the tools and strategies needed to meet those challenges. I am so pleased that my child grew in this environment.`,
-      name: "Arti Chhabra",
-      designation: "Mother of Krishiv",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Thank you, Ms. Sanju Chopra and Mr. Arun Chopra, for creating an institution that not only educates but also empowers our children for life`,
+      name: "Mr. joshi",
+      designation: "Father of sumant",
+      imgSrc: "/assets/img/mlogo2.png",
     },
     {
-      content: `Dear Sanju Ma’am, I really want to thank you for the efforts you are putting in our kids in this kind of situation.  In this Lockdown period, my daughter looks forward to the forthcoming classes so eagerly. This continuity in teaching and your efforts are commendable.  Handling things so seriously and conveniently, taking care of each and every child in such a way is commendable. Hats off to you and all the teachers!!.`,
-      name: "Suchi Katpalia",
-      designation: "Mother of Mantra",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Ms. Sanju Chopra, your passion for holistic education has created a wonderful environment for children to grow and excel`,
+      name: "Mr. Chaudhari",
+      designation: "father of Ananya",
+      imgSrc: "/assets/img/mlogo2.png",
     },
     {
-      content: `Both my kids started at Small Wonders and grew as independent young kids. Instilling the sense of independence in its students from a young age by its staff members always impressed me. My kids joined the school as little timid children and have now become more confident socially and in their daily activities. I appreciate all the efforts of Small Wonders for its kids. The moment the kids move out of the gates of Small Wonders, you find in them a very confident personality who can win the world!.`,
-      name: "Minky Narang",
-      designation: "Mother of Kaavya and Dhani",
-      imgSrc: "/assets/img/sampleParent.png",
+      content: `Small Wonders doesn’t just teach; it inspires. My daughter comes home every day excited about what she’s learned!`,
+      name: "Mrs. Gupta",
+      designation: "Mother of Khushi",
+      imgSrc: "/assets/img/flogo3.png",
+    },
+    {
+      content: `It’s rare to find a school that has been consistently excellent for over 20 years. Small Wonders is a gem in education.`,
+      name: "Mr. Singh",
+      designation: "Father of Aryan",
+      imgSrc: "/assets/img/mlogo2.png",
+    },
+    {
+      content: `When we first visited Small Wonders, we knew this was the right school for our child. The warm environment and personalized attention make all the difference.`,
+      name: "Mr. Ramesh",
+      designation: "Father of Tanvi",
+      imgSrc: "/assets/img/mlogo2.png",
+    },
+
+    
+
+    {
+      content: `Ms. Sanju Chopra and Mr. Arun Chopra, your tireless efforts and vision have made Small Wonders a beacon of excellence. Thank you for making education a joy for our children.`,
+      name: "Mrs. Mehta",
+      designation: "Mother of Priya",
+      imgSrc: "/assets/img/flogo3.png",
+    },
+
+    {
+      content: `My child has blossomed in this nurturing environment. The staff at Small Wonders go above and beyond for each child.`,
+      name: "Mrs. D’Souza",
+      designation: "Mother of sahil",
+      imgSrc: "/assets/img/flogo3.png",
+    },
+
+    {
+      content: `Small Wonders has created a learning environment where children are encouraged to dream big and achieve more. Thank you!.`,
+      name: "Mrs. Kapoor",
+      designation: "Mother of Aarav",
+      imgSrc: "/assets/img/flogo3.png",
+    },
+
+    {
+      content: `Thank you, Mr. Arun Chopra, for creating a school where learning is fun, innovative, and meaningful.`,
+      name: "Mr. Malhotra",
+      designation: "father of Kartik",
+      imgSrc: "/assets/img/mlogo2.png",
     },
   ];
 
@@ -57,18 +99,48 @@ export class ParentsTestimonialComponent implements OnInit {
   titleIntro: string = "Our Testimonials";
   title: string = "What our Happy Parents Say";
 
+  // slideConfig = { "slidesToShow": 4, "slidesToScroll": 1, 'autoplay': true, 'autoplaySpeed': 3500, 'dots': true, 'infinite': true, 'arrows': true 'responsive': [{ 'breakpoint': 1600, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 1, } }, { 'breakpoint': 1000, 'settings': { 'slidesToShow': 2, 'slidesToScroll': 1, } }, { 'breakpoint': 600, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, } }] };
+
   slideConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: "<div class='nav-btn next-slide'></div>",
     prevArrow: "<div class='nav-btn prev-slide'></div>",
-    dots: true,
+    dots: false,
     infinite: true,
-    centerMode: true,
+    // autoplay: true,
+    centerMode: false,
     responsive: [
-      { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 1000, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      {
+        breakpoint: "1025",
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: "825",
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: "600",
+        settings: {
+          autoplay: true,
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: "480",
+        settings: {
+          autoplay: true,
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
     ],
   };
 
