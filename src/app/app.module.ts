@@ -21,7 +21,6 @@ import { LeftAlignedImageComponent } from './pages/curriculum-page/left-aligned-
 import { ParentsTestimonialComponent } from './pages/home-page/parents-testimonial/parents-testimonial.component';
 import { SchoolAgeBreakComponent } from './pages/home-page/school-age-break/school-age-break.component';
 import { FranchiseOpportunityComponent } from './pages/home-page/franchise-opportunity/franchise-opportunity.component';
-import { ContactFormComponent } from './pages/contact-form/contact-form.component';
 import { CarouselInfoCardEventComponent } from './components/carousel-info-card-event/carousel-info-card-event.component';
 import { BranchInfoSectionComponent } from './pages/home-page/branch-info-section/branch-info-section.component';
 import { PageBreakSectionComponent } from './pages/home-page/page-break-section/page-break-section.component';
@@ -43,7 +42,6 @@ import { ScheduleTourPageComponent } from './pages/schedule-tour-page/schedule-t
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { BooksAndBeyondPageComponent } from './pages/books-and-beyond-page/books-and-beyond-page.component';
 import { EventsAndGalleryPageComponent } from './pages/events-and-gallery-page/events-and-gallery-page.component';
-import { FranchisePageComponent } from './pages/franchise-page/franchise-page.component';
 import { AdmissionsPageComponent } from './pages/admissions-page/admissions-page.component';
 import { CurriculumPageComponent } from './pages/curriculum-page/curriculum-page.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
@@ -70,6 +68,13 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { BlogDetailsComponent } from './pages/blog-page/blog-details/blog-details.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TestimonialPageComponent } from './testimonial-page/testimonial-page.component';
+// For ContactFormComponent
+import { ContactFormComponent as WezContactFormComponentHome } from './pages/home-page/contact-form/contact-form.component';
+import { ContactFormComponent as WezContactFormComponentStandard } from './pages/contact-form/contact-form.component';
+
+// For FranchisePageComponent
+import { FranchisePageComponent as WezFranchisePageComponentRoot } from './franchise-page/franchise-page.component';
+import { FranchisePageComponent as WezFranchisePageComponentPages } from './pages/franchise-page/franchise-page.component';
 
 
 
@@ -86,7 +91,6 @@ import { TestimonialPageComponent } from './testimonial-page/testimonial-page.co
     AboutUsPageComponent,
     CurriculumPageComponent,
     AdmissionsPageComponent,
-    FranchisePageComponent,
     EventsAndGalleryPageComponent,
     BooksAndBeyondPageComponent,
     BlogPageComponent,
@@ -108,7 +112,6 @@ import { TestimonialPageComponent } from './testimonial-page/testimonial-page.co
     PageBreakSectionComponent,
     BranchInfoSectionComponent,
     CarouselInfoCardEventComponent,
-    ContactFormComponent,
     FranchiseOpportunityComponent,
     SchoolAgeBreakComponent,
     ParentsTestimonialComponent,
@@ -138,7 +141,10 @@ import { TestimonialPageComponent } from './testimonial-page/testimonial-page.co
     BlogDetailsComponent,
     OurHistoryComponent,
     TestimonialPageComponent,
-    ContactFormComponent,
+    WezContactFormComponentHome,
+    WezContactFormComponentStandard,
+    WezFranchisePageComponentRoot,
+    WezFranchisePageComponentPages,
   ],
   imports: [
     BrowserModule,
