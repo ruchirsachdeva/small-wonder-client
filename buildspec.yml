@@ -7,6 +7,10 @@ environment_variables:
 phases:
   install:
     commands:
+      - echo Removing existing node_modules...
+      - rm -rf node_modules
+      - echo Cleaning npm cache...
+      - npm cache clean --force
       - echo Installing source NPM dependencies...
       - npm install
       - npm install -g @angular/cli@8.0.3
