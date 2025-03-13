@@ -138,6 +138,7 @@ import { TestimonialPageComponent } from './testimonial-page/testimonial-page.co
     BlogDetailsComponent,
     OurHistoryComponent,
     TestimonialPageComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -145,7 +146,7 @@ import { TestimonialPageComponent } from './testimonial-page/testimonial-page.co
     AppRoutingModule,
     NgxUsefulSwiperModule,
     NgbModule,
-    SlickCarouselModule, 
+    SlickCarouselModule,
     HttpClientModule,
      EmbedVideo.forRoot()
   ],
