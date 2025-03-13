@@ -69,12 +69,10 @@ import { BlogDetailsComponent } from './pages/blog-page/blog-details/blog-detail
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TestimonialPageComponent } from './testimonial-page/testimonial-page.component';
 // For ContactFormComponent
-import { ContactFormComponent as WezContactFormComponentHome } from './pages/home-page/contact-form/contact-form.component';
-import { ContactFormComponent as WezContactFormComponentStandard } from './pages/contact-form/contact-form.component';
+import { ContactFormComponent } from './pages/home-page/contact-form/contact-form.component';
 
 // For FranchisePageComponent
-import { FranchisePageComponent as WezFranchisePageComponentRoot } from './franchise-page/franchise-page.component';
-import { FranchisePageComponent as WezFranchisePageComponentPages } from './pages/franchise-page/franchise-page.component';
+import { FranchisePageComponent } from './pages/franchise-page/franchise-page.component';
 
 
 
@@ -141,10 +139,8 @@ import { FranchisePageComponent as WezFranchisePageComponentPages } from './page
     BlogDetailsComponent,
     OurHistoryComponent,
     TestimonialPageComponent,
-    WezContactFormComponentHome,
-    WezContactFormComponentStandard,
-    WezFranchisePageComponentRoot,
-    WezFranchisePageComponentPages,
+    ContactFormComponent,
+    FranchisePageComponent,
   ],
   imports: [
     BrowserModule,
