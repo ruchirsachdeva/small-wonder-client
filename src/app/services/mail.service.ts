@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import emailjs from '@emailjs/browser';
-
+import emailjs from 'emailjs-com';
 
 const templateParams = {
   from_name: 'Ruchir',
