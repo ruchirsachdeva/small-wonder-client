@@ -6,8 +6,8 @@ import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
   styleUrls: ["./about-us-page.component.scss"],
 })
 export class AboutUsPageComponent implements OnInit {
-  @ViewChild('missionSection') missionSection: ElementRef;
-  @ViewChild('visionSection') visionSection: ElementRef;
+  @ViewChild('missionSection', { static: false }) missionSection: ElementRef;
+  @ViewChild('visionSection', { static: false }) visionSection: ElementRef;
 
   image = "/assets/img/aboutUs.jpg";
   title = "";
