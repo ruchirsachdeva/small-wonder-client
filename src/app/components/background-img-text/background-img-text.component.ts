@@ -17,9 +17,8 @@ export class BackgroundImgTextComponent implements OnInit {
     element.style.background = `url(${this.bgImage}) no-repeat`;
     element.style.backgroundSize = "cover";
     element.style.backgroundPosition="center"
-    // element.style.backgroundAttachment = "fixed";
-    // element.style.backgroundPosition = "right center";
+    
   }
-  // TODO Add small scale image for smaller width screens
-  // change   bgImage: string = "/assets/img/school-building.jpg";
+  
+  
 }
