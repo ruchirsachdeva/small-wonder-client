@@ -432,13 +432,6 @@
   position: absolute;
   z-index: -1;
 }
-
-// .bann-p{
-//     font-size: 18px !important;
-//     font-weight: 400;
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-// }
 .pri-c {
   font-size: 20px;
   font-weight: bold;
@@ -455,11 +448,9 @@
 span{
   color: #B4874C ;
   margin-left: -2px;
-  //margin-bottom:40px;
 }
 @media only screen and (max-width: 768px) {
   .banner-content {
-    // padding: 5rem !important;
     background-color: #e8d4babd;
   }
   .bann-bg {
@@ -519,8 +510,6 @@ span{
 @media only screen and (max-width: 941px) {
   .content__container__list__item[_ngcontent-ipo-c103] {
     line-height: unset !important;
-    
-    // font-size: 25px !important;
   }
 }
 @media (min-width: 541px) and (max-width: 941px) {
@@ -539,9 +528,7 @@ span{
   }
 }
 @media only screen and (max-width: 941px) {
-  // .banner-content[_ngcontent-ipo-c103] {
-  //   // padding-top: 6rem !important;
-  // }
+  
   .banenr-text {
     margin: 10px !important;
     font-size: 16px !important;
@@ -555,9 +542,7 @@ span{
   .button-rounded {
     margin-top: 10px;
   }
-  // .content__container {
-  //   font-size: 25px !important;
-  // }
+
 }
 
 
