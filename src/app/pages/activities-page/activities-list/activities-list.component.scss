@@ -104,6 +104,12 @@
   }
 }
 
+@media (max-width: 1024px){
+  .act-h1{
+    font-size: 30px !important;
+  }
+}
+
 @media only screen and (min-width: 750px) and (max-width: 990px) {
   .activities-list-section {
     .header > h1{

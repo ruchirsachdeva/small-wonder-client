@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { MailService } from '../../services/mail.service';
 
 @Component({
   selector: "app-about-us-page",
@@ -6,13 +7,32 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./about-us-page.component.scss"],
 })
 export class AboutUsPageComponent implements OnInit {
+  @ViewChild('missionSection', { static: false }) missionSection!: ElementRef;
+  @ViewChild('visionSection', { static: false }) visionSection!: ElementRef;
+
   image = "/assets/img/aboutUs.jpg";
-  title="";
+  title = "";
+  text = "Welcome to our Wonderian Family, and to our website. This website has been created to give parents and carers a brief synopsis, 'flavour' of the offerings and facilities that are available to our students.";
 
-  text = `“Welcome to our Wonderian Family, and to our website.”\nThis website has been created to give parents and carers a brief synopsis, ‘flavour’ of the offerings and facilities that are available to our students.`;
-
-
-  constructor() {}
+  constructor(private mailService: MailService) {}
 
   ngOnInit() {}
+
+  scrollToMission() {
+    this.missionSection.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  scrollToVision() {
+    this.visionSection.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  sendEnquiry() {
+    const templateParams = {
+      from_name: 'Ruchir',
+      to_name: 'Enquiry team',
+      message: 'Check this out!',
+      reply_to: 'ruchirsachdeva@yahoo.com'
+    };
+    this.mailService.send(templateParams);
+  }
 }

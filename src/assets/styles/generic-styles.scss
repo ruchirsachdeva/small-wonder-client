@@ -1,8 +1,21 @@
 @import "./variables.scss";
+@import "../css/about.scss";
 
 body {
   margin: 0;
- // font-family: "Nunito", sans-serif;
+  // font-family: "Nunito", sans-serif;
+  background-color: #FDF8F2 !important;
+  font-family: 'Poppins' !important;
+  font-weight: 100 !important;
+
+  .btn,
+  .btn:hover,
+  .btn:active,
+  .btn:focus-visible {
+    border-radius: 60px !important;
+    background-color: $btn-primary !important;
+    border-color: $btn-primary !important;
+  }
 }
 
 .pointer-icon {
@@ -180,8 +193,21 @@ hr.style-dotted-footer {
   display: block;
 }
 
+.active-link {
+  color: $active-text-color !important;
+}
+
+.primary-color{
+  color: $btn-primary;
+}
+
 @media only screen and (max-width: 480px) {
   .desktop-wrapper {
     display: none;
   }
 }
+
+
+// .banner-slide.slick-slide.slick-current ~ .slick-slide {
+//   transform: rotate3d(20deg);
+// }  

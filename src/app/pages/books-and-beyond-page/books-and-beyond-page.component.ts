@@ -68,7 +68,6 @@ export class BooksAndBeyondPageComponent implements OnInit {
         "Linguistic Skills",
         "Mathematical Skills",
         "Science and Social skills",
-        "Animation skills",
       ],
     },
     {
@@ -97,5 +96,22 @@ export class BooksAndBeyondPageComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    const slider = document.querySelector('.slider') as HTMLElement;
+let slideIndex = 0;
+
+function showSlide(index: number) {
+  slider.style.transform = `translateX(-${index * 300}px)`;
 }
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % 3;
+  showSlide(slideIndex);
+}
+
+setInterval(nextSlide, 2000); // Automatically transition slides every 2 seconds
+
+  }
+}
+
+
